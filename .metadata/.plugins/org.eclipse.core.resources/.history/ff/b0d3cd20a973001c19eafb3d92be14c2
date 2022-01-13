@@ -1,0 +1,21 @@
+package com.java8;
+
+public class OptionalClassExample {
+
+	public static void main(String[] args) {
+		
+		// need of optional class
+		// method 1:
+		String name = null;
+		if(name == null) {
+			System.out.println("Please provide string properly");
+		}
+		else {
+			System.out.println("String length : " + name.length());
+		}
+		
+		// method 2:
+		int len = name.length();
+	}
+
+}

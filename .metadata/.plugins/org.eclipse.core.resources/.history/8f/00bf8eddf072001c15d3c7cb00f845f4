@@ -1,0 +1,31 @@
+package com.java8;
+
+class Message{
+	Message(String msg){
+		System.out.println("Keep growing ....");
+	}
+}
+
+interface message{
+	public Message msg(String msg);
+}
+
+class MessageImpl implements message{
+
+	@Override
+	public Message msg(String msg) {
+		msg = "Never give up !!";
+		return new Message(msg);
+	}
+}
+
+public class ConstructorMethodRef {
+
+	public static void main(String[] args) {
+		
+		// if let say we have que : 
+		// interface -msg object return object and we have class Message then how will you get that message from class
+		// -> interface msg() : class Message : class implement msg() : main  
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.java8;
+
+public class MethodAndConstructor {
+	
+	public static void square(int f) {
+		System.out.println("Square of " + f + " is : " + (f*f));
+	}
+
+	public static void main(String[] args) {
+		
+		// need of method ref
+		
+//		Runnable r = () -> { 
+//			for(int i=0;i<3;i++) {
+//			System.out.println("Child Thread");
+//			}
+//		};
+		
+		Services s = MethodAndConstructor::square();
+	}
+
+}

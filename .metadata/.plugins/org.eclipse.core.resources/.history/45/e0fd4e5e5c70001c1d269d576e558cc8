@@ -1,0 +1,21 @@
+package com.collections;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class DQueueWithArrayExample {
+
+	public static void main(String[] args) {
+		
+		 Deque<String> dq= new ArrayDeque<String>();
+		 dq.offer("Jaya");
+		 dq.offer("Ajay");
+		 dq.offer("mano");
+		 dq.offer("ahaha");
+		 dq.offer("ahaha");
+		 System.out.println("Elements : " + dq);
+		 
+		 
+	}
+
+}

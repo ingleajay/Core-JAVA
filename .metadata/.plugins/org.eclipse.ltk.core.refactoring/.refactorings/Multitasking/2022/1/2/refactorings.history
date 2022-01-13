@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;multitasking&apos; to &apos;com.multitasking&apos;&#x0D;&#x0A;- Original project: &apos;Multitasking&apos;&#x0D;&#x0A;- Original element: &apos;Multitasking/src/multitasking&apos;&#x0D;&#x0A;- Renamed element: &apos;Multitasking/src/com.multitasking&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;multitasking&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;multitasking" name="com.multitasking" qualified="false" references="true" stamp="1641308276698" textual="false" version="1.0"/>
+</session>

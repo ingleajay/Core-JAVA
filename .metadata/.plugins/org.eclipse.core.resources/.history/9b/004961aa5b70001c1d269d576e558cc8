@@ -1,0 +1,12 @@
+package com.collections;
+
+import java.util.Queue;
+
+public class QueueWithArrayExample {
+
+	public static void main(String[] args) {
+		
+		ArrayQueue<Integer> q = new Queue<Integer>();
+	}
+
+}

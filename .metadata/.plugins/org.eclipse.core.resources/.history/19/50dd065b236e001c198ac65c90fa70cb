@@ -1,0 +1,25 @@
+package com.collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetExample {
+
+	// not in order and unique ele
+	public static void main(String[] args) {
+		HashSet s = new HashSet();
+		s.add(1);
+        s.add(8);
+        s.add(8);
+        s.add("Ajay");
+        System.out.println("Elements : " + s);
+        System.out.println("set contain 8 ele : " + s.contains(8));
+        s.remove(8);
+        System.out.println("remove 8 ele : " + s);
+        System.out.println("size of set : " + s.size());
+        s.clear();
+        System.out.println("clear set : " + s);
+        System.out.println("set empty or not :" + s.isEmpty());
+	}
+
+}

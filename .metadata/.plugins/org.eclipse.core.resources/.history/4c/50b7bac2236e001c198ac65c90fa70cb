@@ -1,0 +1,49 @@
+package com.collections;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
+class Computer4 {
+	
+	int cid;
+	String cbrand;
+	
+	public Computer4(int cid, String cbrand) {
+		this.cid = cid;
+		this.cbrand = cbrand;
+	}
+}
+
+public class HashSetExample {
+
+	// not in order and unique ele
+	public static void main(String[] args) {
+		HashSet s = new HashSet();
+		s.add(1);
+        s.add(8);
+        s.add(3);
+        s.add("Ajay");
+        System.out.println("Elements : " + s);
+        
+        System.out.println("set contain 8 ele : " + s.contains(8));
+        
+        s.remove(8);
+        System.out.println("remove 8 ele : " + s);
+        
+        System.out.println("size of set : " + s.size());
+        
+        s.clear();
+        System.out.println("clear set : " + s);
+        
+        System.out.println("set empty or not :" + s.isEmpty());
+        
+        HashSet<Computer4> c = new HashSet<Computer4>();
+	     c.add(new Computer4(1, "Hp"));
+	     c.add(new Computer4(2, "Dell"));
+	     for(Computer4 ele : c) {
+	    	 System.out.println(ele.cid + " : " + ele.cbrand);
+	     }
+	}
+
+}

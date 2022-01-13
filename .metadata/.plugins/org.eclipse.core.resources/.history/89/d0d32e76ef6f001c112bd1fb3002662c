@@ -1,0 +1,19 @@
+package com.collections;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class SortedMapExample {
+
+	public static void main(String[] args) {
+		
+		SortedMap<Integer,String> ts = new TreeMap<Integer,String>();
+		 ts.put(2,"India");
+	     ts.put(3,"Australia");
+	     ts.put(1,"China");
+	     ts.put(4,"Usa");
+	     ts.put(5,"South Africa");
+	     System.out.println("");
+	}
+
+}

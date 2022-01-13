@@ -1,0 +1,22 @@
+package com.collections;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class SortedSetExample {
+
+	public static void main(String[] args) {
+	
+		SortedSet<String> ts = new TreeSet<String>();
+		 ts.add("India");
+	     ts.add("Australia");
+	     ts.add("South Africa");
+	     ts.add("India");
+	     
+	     System.out.println("Access ele : " + ts);
+	     
+	     ts.remove("Australia");
+	     System.out.println("Remove ele : " + ts);
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.java8;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class DiffMapAndFlatMap {
+
+	public static void main(String[] args) {
+		
+		List<String> productlist1 = Arrays.asList("Printer", "Mouse", "Keyboard", "Motherboard");  
+		List<String> productlist2 = Arrays.asList("Scanner", "Projector", "Light Pen");  
+		List<String> productlist3 = Arrays.asList("Pen Drive", "Charger", "WIFI Adapter", "Cooling Fan");  
+		List<String> productlist4 = Arrays.asList("CPU Cabinet", "WebCam", "USB Light", "Microphone", "Power cable");
+		
+		
+		
+	}
+
+}

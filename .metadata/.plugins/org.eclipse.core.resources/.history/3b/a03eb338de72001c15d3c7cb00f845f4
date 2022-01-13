@@ -1,0 +1,11 @@
+package com.java8;
+
+public class MethodRefServicesImpl implements Services{
+
+	@Override
+	public int square(int a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

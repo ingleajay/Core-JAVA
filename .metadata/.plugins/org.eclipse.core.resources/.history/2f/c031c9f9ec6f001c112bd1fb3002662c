@@ -1,0 +1,41 @@
+package com.collections;
+
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class TreeMapExample {
+
+	public static void main(String[] args) {
+		TreeMap s = new TreeMap(); // hectro
+		// s.put(null, 1);
+		s.put(1,"Ajay");
+        s.put(8,2);
+        s.put(3,1.1f);
+        s.put(4, 's');
+        s.put(5, null);
+        System.out.println("Elements : "  + s);
+        
+        System.out.println("set contain 8 ele : " + s.containsKey(8));
+        
+        s.remove(8);
+        System.out.println("remove 8 ele : " + s);
+        
+        System.out.println("size of set : " + s.size());
+        
+        s.clear();
+        System.out.println("clear set : " + s);
+        
+        System.out.println("set empty or not :" + s.isEmpty());
+        
+        TreeMap<Computer10> c = new TreeMap<Computer10>(new SortedPriceAndName1());
+	     c.add(new Computer10(1, "Hp" , 50000));
+	     c.add(new Computer10(2, "acer", 60000));
+	     c.add(new Computer10(2, "acer", 60000));
+	     c.add(new Computer10(3, "Dell",30000));
+	     
+	     for(Computer10 ele : c) {
+	    	 System.out.println(ele.cid + " : " + ele.cbrand);
+	     }
+	}
+
+}

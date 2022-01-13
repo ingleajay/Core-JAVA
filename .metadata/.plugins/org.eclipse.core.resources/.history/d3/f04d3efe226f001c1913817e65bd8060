@@ -1,0 +1,113 @@
+package com.multitasking;
+
+import java.util.Scanner;
+
+class Producer extends Thread {
+	private int[] bucket;
+	private int size;
+
+	public Producer(int[] bucket, int size, String string) {
+		this.bucket = bucket;
+		this.size = size;
+	}
+
+	@Override
+	public void run() {
+		for (int i = 0; i <size; i++) {
+            System.out.println("Producing item in array : " + i);
+            try {
+                produce(i);
+            } catch (InterruptedException ex) {
+            }
+
+        }
+	}
+
+	private void produce(int i) throws InterruptedException {
+		//wait if the queue is full
+        while (bucket.length == size) {
+            synchronized (this) {
+                System.out.println("The queue is full " + Thread.currentThread().getName()
+                                    + " is waiting , size: " + bucket.length );
+                this.wait();
+            }
+        }
+        
+      //producing element and notify consumers
+        synchronized (this) {   
+        	Scanner sc = new Scanner(System.in);
+        	for(i=0;i<size;i++) {
+            	int ele = sc.nextInt();
+            	bucket[i] = ele;
+            }
+            this.notify();
+        }
+
+	}
+}
+
+class Consumer extends Thread {
+	Producer p;
+	private int[] bucket;
+	private int size;
+	public Consumer(int[] bucket, int size, String string) {
+		this.bucket = bucket;
+		this.size = size;
+	}
+	
+	
+	  @Override
+	    public void run() {
+	      
+	            try {
+	            	consume();
+	                Thread.sleep(50);
+	            } catch (InterruptedException ex) {
+	            }
+
+	       
+	    }
+	
+	
+	
+	
+	private void consume() throws InterruptedException {
+		//wait if the queue is empty
+        while (bucket.length == 0) {
+            synchronized (this) {
+                System.out.println("The queue is empty " + Thread.currentThread().getName()
+                                    + " is waiting , size: " + bucket.length);
+
+              this.wait();
+            }
+        }
+        
+      //Otherwise consume element and notify the waiting producer
+        synchronized (this) {
+            System.out.println("Consumers consumes data from producer : ");
+			for (int i = 0; i < size; i++) {
+				System.out.println("Item  : " + i + " is " + bucket[i]);
+			}
+			System.out.println("Consumer consumes data successfully.");
+        }
+
+	}
+
+}
+
+public class ProducerConsumer {
+
+	public static void main(String[] args) {
+		System.out.println("Enter no of element in bucket :");
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
+		int[] bucket = new int[size];
+		Producer p = new Producer(bucket,size,"Producer");
+		Consumer c = new Consumer(bucket,size,"Consumer");
+		
+		p.start();
+		c.start();
+
+	}
+
+}

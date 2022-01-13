@@ -1,0 +1,14 @@
+package com.java8;
+
+public class MethodRefServicesImpl implements MethodRefServices,Services{
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	@Override
+	public void cube() {
+		
+	}
+}

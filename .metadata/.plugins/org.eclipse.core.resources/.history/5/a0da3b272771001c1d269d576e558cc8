@@ -1,0 +1,8 @@
+package com.java8;
+
+@FunctionalInterface // used to make sure that it is functional interface
+public interface Services {
+
+	public abstract void square(int a);
+	public  int add(int a, int b);
+}

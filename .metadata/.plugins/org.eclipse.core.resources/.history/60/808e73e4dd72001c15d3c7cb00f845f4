@@ -1,0 +1,10 @@
+package com.java8;
+
+public class MethodRefServicesImpl implements MethodRefServices{
+
+	@Override
+	public static int cube() {
+		int n = 3;
+		
+	}
+}

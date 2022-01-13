@@ -1,0 +1,56 @@
+package com.java8;
+
+import java.util.ArrayList;
+import java.util.List;import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class StreamNeed {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> a = new ArrayList<Integer>();
+		a.add(13);
+		a.add(12);
+		a.add(0);
+		a.add(11);
+		System.out.println("Elements in list a : " + a);
+		
+		// without stream -> need to copy even no from list to new list
+		ArrayList<Integer> b = new ArrayList<Integer>();
+		for(Integer h : a) {
+			if(h%2 == 0)
+			 b.add(h);
+		}
+		System.out.println("Elements in list b : " + b);
+		
+		// with stream 
+		List<Integer> c = a.stream().filter(i->i%2==0).collect(Collectors.toList());
+		System.out.println("Elements in list c : " + c);
+		
+		// without stream -> need to double list value in copy list
+		ArrayList<Integer> d = new ArrayList<Integer>();
+		for(Integer k : a) {
+			 d.add(k*2);
+		}
+		System.out.println("Elements in list d : " + d);
+		
+		// with stream
+		List<Integer> e = a.stream().map(i->i*2).collect(Collectors.toList());
+		System.out.println("Elements in list e : " + e);
+		
+		// without stream -> count no of even number from list
+		List<Integer>  ec = List.of(10,34,23,21,26);
+		int count = 0;
+		for(Integer f : ec) {
+			if(f%2==0) {
+				count  = count +1;
+			}
+		}
+		System.out.println("Count even no  : " + count);
+		
+		//with stream 
+		long cf = ec.stream().filter(i->i%2==0).count();
+		System.out.println("Count even no : " + cf);
+	}
+
+}

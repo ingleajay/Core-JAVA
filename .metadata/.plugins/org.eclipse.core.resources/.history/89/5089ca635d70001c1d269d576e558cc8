@@ -1,0 +1,21 @@
+package com.collections;
+import java.util.Deque;
+import java.util.LinkedList;
+
+public class QueueWithLinkedListExample {
+
+	public static void main(String[] args) {
+		
+		 Deque<String> dq= new LinkedList<String>();
+		 dq.offer("Jaya");
+		 dq.offer("Ajay");
+		 dq.offer("mano");
+		 dq.offer("ahaha");
+		 
+		// duplicate allowed
+	    dq.offer("ahaha");
+	    System.out.println("Elements : " + dq);
+		 
+	}
+
+}

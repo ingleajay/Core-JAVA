@@ -1,0 +1,65 @@
+package com.java8;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+
+class Employee1{
+	
+	int eid;
+	String ename;
+	int esalary;
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public int getEsalary() {
+		return esalary;
+	}
+	public void setEsalary(int esalary) {
+		this.esalary = esalary;
+	}
+	public Employee1(int eid, String ename, int esalary) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.esalary = esalary;
+	}
+	public Employee1() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+}
+
+public class ConsumerPredefine {
+
+	public static void main(String[] args) {
+		
+		Consumer<String> name = (s) -> System.out.println("Student Name : " + s);
+		System.out.println("Give Student Name : " );
+		name.accept("Ajay Ingle");
+		
+		ArrayList<Employee1> e = new ArrayList<Employee1>();
+		e.add(new Employee1(1,"Ajay",50000));
+		e.add(new Employee1(2,"Vijay",1000000));
+		Consumer<Employee1> emp = (r) -> {
+			System.out.println("Emp Id : " + r.eid);
+			System.out.println("Emp Name : " + r.ename);
+			System.out.println("Emp Price : " + r.esalary);
+		};
+		
+	}
+}

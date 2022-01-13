@@ -1,0 +1,92 @@
+package com.java8;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.function.Function;
+
+class Employee{
+	
+	int eid;
+	String ename;
+	int esalary;
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public int getEsalary() {
+		return esalary;
+	}
+	public void setEsalary(int esalary) {
+		this.esalary = esalary;
+	}
+	public Employee(int eid, String ename, int esalary) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.esalary = esalary;
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+}
+
+public class FunctionPredefineExample {
+
+	public static void main(String[] args) {
+		
+		// first arg : input and second arg : return value
+		Function<Integer, Integer> i = (j) -> (j*j);
+		System.out.println("Square of number  : " + i.apply(4));
+		
+		// input string and output get length of string
+		Function<String, Integer> k = (l) -> l.length();
+		System.out.println("String length : " + k.apply("Vijay"));
+		
+		Scanner sc = new Scanner(System.in);
+		int id = sc.nextInt();
+		ArrayList<Employee> e = new ArrayList<Employee>();
+		e.add(new Employee(1,"Ajay",50000));
+		e.add(new Employee(2,"Vijay",1000000));
+		Function<Employee, Integer> e1 = (f) -> {
+			int rate = 0;
+			if(f.esalary > 50000)	{
+				rate = 3;
+				return rate;
+			}
+			else if(f.esalary < 50000) {
+				rate = 2;
+				return rate;
+			}
+			else {
+				rate = 5;
+				return rate;
+			}
+		};
+		
+		e.forEach((q)->{
+			int erate = e1.apply(q);
+			System.out.println("Enter Employee Id : " + id);
+			if(q.eid == id) {
+				System.out.println("Employee Name : " + q.ename + " Employee Salary : " + q.esalary);
+				System.out.println(q.ename  + " is rated with " + erate + " star");
+			}
+			else {
+				System.out.println("Id is not availble ");
+			}
+		});
+	}
+}
