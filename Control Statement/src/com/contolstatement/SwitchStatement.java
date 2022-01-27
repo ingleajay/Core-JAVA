@@ -1,8 +1,20 @@
 package com.contolstatement;
 
 public class SwitchStatement {
+	
+	// need of switch - 
+	// if we many options like if else if then we use switch case - redablity of program increase
+	// arguments allowed - byte , short , char , int , String and it's warapper classses also
+	// switch statement has case or default but not independent statement
+	
+	
 
 	public static void main(String[] args) {
+		
+//		int b =0;
+//		switch(b) {
+//		   System.out.println(b);
+//		}
 		
 		// Use “case” with a constant expression.
 		

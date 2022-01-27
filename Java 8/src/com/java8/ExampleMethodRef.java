@@ -16,5 +16,4 @@ public class ExampleMethodRef {
 		}
 		System.out.println("Absolute value : " + abs);
 	}
-
 }

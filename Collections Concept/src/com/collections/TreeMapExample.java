@@ -58,9 +58,9 @@ public class TreeMapExample {
 
 	public static void main(String[] args) {
 		TreeMap s = new TreeMap(); // hectro
-		// s.put(null, 1);
+		//s.put(null, 1);
 		s.put(1,"Ajay");
-        s.put(8,2);
+        s.put(3,2);
         s.put(3,1.1f);
         s.put(4, 's');
         s.put(5, null);
@@ -68,7 +68,7 @@ public class TreeMapExample {
         
         System.out.println("set contain 8 ele : " + s.containsKey(8));
         
-        s.remove(8);
+        s.remove(4);
         System.out.println("remove 8 ele : " + s);
         
         System.out.println("size of set : " + s.size());
@@ -80,8 +80,8 @@ public class TreeMapExample {
         
         TreeMap<Computer10, Integer> j = new TreeMap<Computer10, Integer>(new SortedPriceAndName2());
         
-        Computer10 hp =  new Computer10(1,"Hp", 30000);
-        Computer10 dell =  new Computer10(2,"Dell", 40000);
+        Computer10 hp =  new Computer10(2,"Hp", 30000);
+        Computer10 dell =  new Computer10(1,"Dell", 40000);
         Computer10 acer =  new Computer10(3,"zcer",100000);
         
         j.put(hp,hp.getCprice());

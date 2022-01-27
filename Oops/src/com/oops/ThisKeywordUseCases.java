@@ -49,6 +49,7 @@ class College{
 	int rate = 4;
 	
 	void college_rate(College c) {
+		System.out.println("This is your current object points by method : " + this);
         System.out.println("College Rate : " + c.rate);
     }
 
@@ -97,6 +98,7 @@ public class ThisKeywordUseCases {
         
         // 5. this is used to pass the argument in a current class method.
         College clg = new College();
+        System.out.println("This is your current obejct by college object: " + clg);
         clg.display_rate();
         
         // 6. this keyword is used to return the current class instance.

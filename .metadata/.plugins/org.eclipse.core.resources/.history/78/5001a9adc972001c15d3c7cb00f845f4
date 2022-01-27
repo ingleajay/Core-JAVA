@@ -1,9 +1,0 @@
-package com.java8;
-
-public class SupplierPredefine {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

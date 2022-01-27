@@ -4,6 +4,8 @@ public class DataTypeConversion {
 
 	public static void main(String[] args) {
 		
+		// 24 conversions 
+		
 		// String to int
 		stringToint();
 		

@@ -43,6 +43,7 @@ class Computer9 {
 	}
 	
 	
+	
 }
 
 public class LinkedHashMapExample {
@@ -82,13 +83,13 @@ public class LinkedHashMapExample {
         }
         
 		LinkedHashMap<Computer9, Integer> j = new LinkedHashMap<>();
+		Computer9 acer =  new Computer9(0,"Acer",600000);
         Computer9 hp =  new Computer9(1,"Hp", 100000);
         Computer9 dell =  new Computer9(2,"Dell", 40000);
-        Computer9 acer =  new Computer9(3,"Acer",600000);
         
         j.put(hp,hp.getCprice());
-        j.put(dell,dell.getCprice());
         j.put(acer,acer.getCprice());
+        j.put(dell,dell.getCprice());
         
         for (Map.Entry<Computer9, Integer> e : j.entrySet()) {
             System.out.println(e.getKey().getCbrand() + " : " + e.getValue());

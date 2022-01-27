@@ -1,9 +1,0 @@
-package com.collections;
-
-public class ComparableExample {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

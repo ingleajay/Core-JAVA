@@ -16,7 +16,6 @@ class Temp{
 	public void finalize() {
 		System.out.println("It is used to clean up code..");
 	}
-
 }
 
 public class WeakHashMapExample {
@@ -46,5 +45,4 @@ public class WeakHashMapExample {
 		System.gc();
 		System.out.println("GC try to kill temp object : " + h1);
 	}
-
 }

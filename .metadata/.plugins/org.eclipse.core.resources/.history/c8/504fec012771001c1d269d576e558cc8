@@ -1,7 +1,0 @@
-package com.java8;
-
-@FunctionalInterface
-public interface Services {
-
-	public abstract void square();
-}

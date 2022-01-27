@@ -15,19 +15,7 @@ public class BreakAndContinue {
         }
         System.out.println("Yes, Student id 5 is found:" + i);
         System.out.println(" ");
-        
-        
-        
-        // Don’t Assign student id 0 to subject id 1 in student class
-        for (int stud_id = 0; stud_id < 2; stud_id++) {
-            for (int stud_subj = 0; stud_subj < 2; stud_subj++) {
-                if (stud_id == 0 && stud_subj == 1) {
-                    break;
-                }
-                System.out.println("Student id " + stud_id + " has subject " + stud_subj);
-            }
-        }
-        System.out.println(" ");
+       
         
         
         
@@ -56,6 +44,20 @@ public class BreakAndContinue {
             y = y + stuid + " ";
         }
         System.out.println("This Student stay in room :" + y);
+        
+        int id=0;  
+        String z = "";
+        while(id<10){  
+            if(id==5){  
+                id++;
+                continue;
+            }  
+            z = z + " " + id;
+            id++; 
+            
+        } 
+        System.out.println("This Student stay in room :" + z);
+        System.out.println(" ");
 	}
 
 }

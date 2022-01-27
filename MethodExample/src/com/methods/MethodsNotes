@@ -1,0 +1,22 @@
+Disadvantages of without use of method : 
+     1. retype same code again - reusablity less
+     2. Readablity of code decrease
+     3. Not easy to done modification
+     4. Code length increase
+
+Advantages of method : 
+     1. Reusablity increase
+     2. Code length reduce
+     3. Easily modify
+     4. Readablity increase
+
+What is Method :
+   Method -> block of code, collections of statements, set of code group together to perform some operation or task.
+   
+   => method signature
+   
+Task : Bank - class - user details method
+       operation in bank - opening an account  ( save details ) 
+                         - credit card 
+                         
+       

@@ -1,9 +1,0 @@
-package com.collections;
-
-public class QueueWithLinkedListExample {
-
-	public static void main(String[] args) {
-		
-	}
-
-}
