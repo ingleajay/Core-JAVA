@@ -1,5 +1,7 @@
 package com.methods;
 
+import java.util.Scanner;
+
 public class Recursion {
 
 	public static void main(String[] args) {
@@ -15,7 +17,26 @@ public class Recursion {
 		
 		// factorial number
 		System.out.println("Factorial of 5 is: "+fact(5));  
+		
+		// fibo
+		System.out.println("Enter how may fibonnaci numbers to print");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        
+        for (int i = 0; i<=n-1; ++i)
+        {
+           System.out.print(fibonaccinumber(i) + " ");
+        }
 
+	}
+
+	private static int fibonaccinumber(int n) {
+		if(n==0)
+            return 0;
+        else if(n==1)
+            return 1;
+        else
+            return fibonaccinumber(n-1) + fibonaccinumber(n-2);
 	}
 
 	private static int fact(int n) {
@@ -25,6 +46,7 @@ public class Recursion {
 	            return(n * fact(n-1));     
 	}
 }
+// Task - fibonacci in recursion
 
 
 // n*fact(n-1) -> n=5 - ( Bottom to top )
