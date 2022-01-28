@@ -22,10 +22,10 @@ public class ForLoop {
 		String even = "";
 		String odd = "";
 		for(int i=1 ; i <= 10 ; i++) {
-			if(no%i == 0) {
+			if(i%2 == 0) {
 				even  = even + " "  + i;
 			}
-			else {
+			else{
 				odd = odd + " " + i;
 			}
 		}
