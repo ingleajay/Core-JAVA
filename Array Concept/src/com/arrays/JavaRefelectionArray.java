@@ -7,8 +7,11 @@ public class JavaRefelectionArray {
 
 	public static void main(String[] args) {
 		
-		int size = 5;
-		int[] reflect = (int[]) Array.newInstance(int.class,size);
+		// # The Java Reflection class provides static methods, and these methods can be used to create and access Java arrays in a dynamic manner.
+		// it is ensures your type of data - type-safe at runtime
+		
+		   int size = 5;
+		   int[] reflect = (int[]) Array.newInstance(int.class,size); // (component type, length)
 			Array.setInt(reflect, 0, 110);
 			Array.setInt(reflect, 1, 20);
 			Array.setInt(reflect, 2, 40);
@@ -18,22 +21,29 @@ public class JavaRefelectionArray {
 			// printing array reflection : 
 			
 		    for (int i : reflect) {
-				System.out.println(i);
+				System.out.print(i + " ");
 			}
+		    System.out.println();
 		    
-		    System.out.println("Element at index 0: "
-                    + Array.getInt(reflect, 0));
-            System.out.println("Element at index 1: "
-                    + Array.getInt(reflect, 1));
-            System.out.println("Element at index 2: "
-                    + Array.getInt(reflect, 2));
-            System.out.println("Element at index 3: "
-                    + Array.getInt(reflect, 3));
-            System.out.println("Element at index 4: "
-                    + Array.getInt(reflect, 4));
+		   for(int i=0; i<reflect.length;i++) {
+			   System.out.println("Element at index " + i + " is " + Array.getInt(reflect, i) );
+		   }
             
             System.out.println(Arrays.toString(reflect));
-
+            
+            // Two dim
+            
+            int[][] m = (int[][]) Array.newInstance(int.class, 2, 2);
+            int[] row1 = (int[]) Array.get(m,0);
+            int[] row2 = (int[]) Array.get(m,1);
+            Array.setInt(row1, 0, 110);
+			Array.setInt(row1, 1, 20);
+			Array.setInt(row2, 0, 40);
+			Array.setInt(row2, 1, 27);
+			for (int i = 0; i < 2; i++)
+	            for (int j = 0; j < 2; j++) {
+	                System.out.println("matrix" + " [" + i + "]" + " [" + j + "]" + " = " + ((int[][])m)[i][j]);
+	        }
+            
 	}
-
 }

@@ -3,10 +3,10 @@ package com.strings;
 public class StringBufferExample {
 
 	public static void main(String[] args) {
-		// Every method is non-synchronized
-		// Need : if content is changes frequently  use string buffer
+		// Every method is non-synchronized -> Big rice plate -> 10 person to eat -> simul -> come -> eating 
+		// Need : if content is changes frequently use string buffer
 		// String buffer is not uses string constant pool concept
-		// String buffer is mutable
+		// String buffer is mutable -> can be modify
 		// Every time sepreated objects created if we have modification to obejcts it get modified
 		// All wrapper class is immuatble
 		
@@ -37,15 +37,18 @@ public class StringBufferExample {
 		StringBuffer c=new StringBuffer(5);
 		System.out.println("Capacity of string buffer default : " + c.capacity());
 		c.append("abcde");
-		c.append("f");
+		c.append("f"); // 5+1 = 6*2 = 12
 		System.out.println("Capacity of string buffer updated : " + c.capacity());
-		c.append("g");
+		c.append("12312312312"); // only enter 11 char here because f is 1 char alredy inserted
+		c.append("2"); // 12+1  = 13*2 = 26
 		System.out.println("Capacity of string buffer updated : " + c.capacity());
 		
 		// find capacity with string
 		StringBuffer f=new StringBuffer("Ajay"); // => new capacity = string.length() + 16 = 4+16 = 20
 		System.out.println("Capacity of string buffer default : " + f.capacity());
-		f.append("qweasdzxcqweasdzxcre"); //=> ( 20 + 1 ) *2 = 42;
+		f.append("qweasdzxcqweasdz");   
+		System.out.println("Capacity of string buffer updated : " + f.capacity());
+		f.append("xcre");//=> ( 20 + 1 ) *2 = 42;
 		System.out.println("Capacity of string buffer updated : " + f.capacity());
 		f.append("g"); 
 		System.out.println("Capacity of string buffer updated : " + f.capacity());

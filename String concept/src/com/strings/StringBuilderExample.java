@@ -48,7 +48,7 @@ public class StringBuilderExample {
 				f.append("g"); 
 				System.out.println("Capacity of string buffer updated : " + f.capacity());
 				
-				// StringBuffer to StringBuilder
+				// StringBuilder to StringBuffer
 				StringBuilder m = new StringBuilder();
 				System.out.println("m : " + m.getClass());
 				m.append("hey");

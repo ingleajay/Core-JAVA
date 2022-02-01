@@ -17,6 +17,7 @@ public class StringJoinerExample {
                   
         System.out.println(joinNames);  
         
+        
         StringJoiner joinNames1 = new StringJoiner(",", "[", "]");   // passing comma(,) and square-brackets as delimiter   
         
         // Adding values to StringJoiner  
@@ -25,7 +26,7 @@ public class StringJoinerExample {
         System.out.println("String Joiner 1 : " + joinNames1);
   
         // Creating StringJoiner with :(colon) delimiter  
-        StringJoiner joinNames2 = new StringJoiner(":", "[", "]");  // passing colon(:) and square-brackets as delimiter   
+        StringJoiner joinNames2 = new StringJoiner(":", "{", "}");  // passing colon(:) and square-brackets as delimiter   
           
         // Adding values to StringJoiner  
         joinNames2.add("Peter");  

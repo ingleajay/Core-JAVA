@@ -28,7 +28,7 @@ public class ArmstrongNumber {
 		
 		
 		// Task 
-		int start = 100;
+		int start = 1;
 		int end = 20000;
 		// int to staring
 	
