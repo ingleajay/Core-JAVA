@@ -12,6 +12,15 @@ interface Eatable{
 }  
 
 public class AnonymousInnerClass {
+	
+	/*
+	 * 1. It can access all the members (data members and methods) of the outer class, including private.
+
+2. To develop more readable and maintainable code
+
+3. Code Optimization: It requires less code to write.
+ 
+	  */
 
 	public static void main(String[] args) {
 		

@@ -4,7 +4,7 @@ public class IfStatement {
 
 	public static void main(String[] args) {
 		
-		// If Statement - used when we have single condition to check
+		// If Statement - used when we have condition to check
 		int a = 3;
 		int b = 4;
 		if(a>b) {
@@ -19,7 +19,7 @@ public class IfStatement {
         } 
         
         
-        // If-else Statement - we have sigle condition to check and it's has both possiblities
+        // If-else Statement - we have condition to check and it has both possibilities
         int c = 5;
         int d = 2;
         if(c%d == 0) {

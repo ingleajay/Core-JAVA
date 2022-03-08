@@ -2,6 +2,11 @@ package com.oops;
 
 public class CopyConstructor {
 	
+	// Need : 
+	// we face a problem where we required to create an exact copy of an existing object of the class. 
+	// There is also a condition, 
+	// if we have made any changes in the copy it should not reflect in the original one and vice-versa.
+	
 	private String NewFoodName;
 	private String FoodName;
 	
@@ -12,7 +17,7 @@ public class CopyConstructor {
 	}
 	
 	CopyConstructor(CopyConstructor Food1){				
-		   this.NewFoodName = Food1.FoodName;
+		   this.NewFoodName = Food1.FoodName.concat("Banana");
 		   System.out.println("This is food name from copy constructor : " + NewFoodName); 
 	}
 	

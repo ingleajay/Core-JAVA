@@ -28,6 +28,8 @@ public class ThisKeyword {
 
 	public static void main(String[] args) {
 		
+		//this is a reference variable that refers to the current object.
+		
 		Student1 s = new Student1(101);
 		System.out.println("Student id : " + s.stud_id);
 		

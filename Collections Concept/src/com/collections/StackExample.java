@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class StackExample {
+	
 
 	public static void main(String[] args) {
 		Scanner cp = new Scanner(System.in);
@@ -26,5 +27,4 @@ public class StackExample {
         boolean res = s.empty();
         System.out.println("Check stack empty ? " + res);
 	}
-
 }

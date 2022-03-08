@@ -7,6 +7,8 @@ import java.io.IOException;
 public class BufferOutputStreamExample {
 
 	public static void main(String[] args) throws IOException {
+		// It internally uses buffer mechanism to make the performance fast. 
+		//and bufferoutputstream used for buffering an output stream.
 		 FileOutputStream fout=new FileOutputStream("F:\\Java\\core java\\src\\com\\io\\output5.txt");    
 	     BufferedOutputStream bout=new BufferedOutputStream(fout);    
 	     String s="Welcome to codeouter.";    

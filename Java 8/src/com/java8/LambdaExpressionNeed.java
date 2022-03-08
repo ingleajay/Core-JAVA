@@ -41,6 +41,7 @@ class Person1{
 public class LambdaExpressionNeed {
 
 	public static void main(String[] args) {
+		
 		// by normal 
 		System.out.println("Square of 4 by function : " + square(4));
 		 
@@ -67,7 +68,8 @@ public class LambdaExpressionNeed {
 			a.add(i);
 		}
 		a.forEach((n)->System.out.println(s.square(n)));
-		
+		Collections.sort(a);
+		System.out.println(a);
 		//  Thread using lambda
 		Runnable r1=()->System.out.println("I am runnable Thred " + Thread.currentThread().getId());
 		Thread t1 = new Thread(r1);

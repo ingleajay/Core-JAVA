@@ -60,6 +60,7 @@ public class PriorityQueueExample {
 		templequeue.offer(7);
 		templequeue.offer(9);
 		templequeue.offer(1);
+
 		System.out.println("Elements : " + templequeue);
 		
 		System.out.println("Peek of queue : " + templequeue.peek());

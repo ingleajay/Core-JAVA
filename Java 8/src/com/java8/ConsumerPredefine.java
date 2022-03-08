@@ -67,7 +67,7 @@ public class ConsumerPredefine {
 		
 		Consumer<Integer> c1 = (m)-> System.out.println("C1 : " + 2*m);;
 		Consumer<Integer> c2 = (n)-> System.out.println("C2 : " +n*n*n);
-		c1.andThen(c2).accept(2);
+		c1.andThen(c2).accept(3);
 		c2.andThen(c1).accept(2);
 		
 		// increase salary of each emp

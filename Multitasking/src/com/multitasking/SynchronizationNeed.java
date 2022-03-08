@@ -21,21 +21,21 @@ class Cricketer{
 	// if I make sync with className.class as argument to block of code of method and has different object for two thread -> non-simult output
 	
 	
-	public void wishmsg(String msg) throws InterruptedException { // static // synchorization
-		
-//		synchronized (this) {
-//			for(int i=0; i<4;i++) {
-//				System.out.println("Message : " + msg);
-//				Thread.sleep(2000);
-//			}
-//		}
-		
-		synchronized (Cricketer.class) {
+	public synchronized void wishmsg(String msg) throws InterruptedException { // static // synchorization
+//		
+		synchronized (this) {
 			for(int i=0; i<4;i++) {
 				System.out.println("Message : " + msg);
 				Thread.sleep(2000);
 			}
 		}
+		
+//		synchronized (Cricketer.class) {
+//			for(int i=0; i<4;i++) {
+//				System.out.println("Message : " + msg);
+//				Thread.sleep(2000);
+//			}
+//		}
 //		for(int i=0; i<4;i++) {
 //		System.out.println("Message : " + msg);
 //		Thread.sleep(2000);
@@ -68,10 +68,10 @@ public class SynchronizationNeed {
 	    Cricketer c1 = new Cricketer();
 	    Cricketer c2 = new Cricketer();
 	    SendWishMessage s1 = new SendWishMessage("Dhoni", c1);
-	    // SendWishMessage s3 = new SendWishMessage("Sachin", c1);
-        SendWishMessage s2 = new SendWishMessage("Youraj", c2);
+	    SendWishMessage s3 = new SendWishMessage("Sachin", c1);
+        SendWishMessage s2 = new SendWishMessage("Youraj", c1);
 		s1.start();
-		//s3.start();
+		s3.start();
 		s2.start();
 	}
 }

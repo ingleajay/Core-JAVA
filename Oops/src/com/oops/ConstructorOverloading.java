@@ -2,6 +2,9 @@ package com.oops;
 
 public class ConstructorOverloading {
 	
+	// Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. 
+	// They are arranged in a way that each constructor performs a different task. 
+	
 	ConstructorOverloading(int id){
 		System.out.println("This is student ID : " +id);
 	}

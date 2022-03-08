@@ -7,6 +7,7 @@ import java.io.IOException;
 public class BufferReaderExample {
 
 	public static void main(String[] args) throws IOException {
+		// It makes the performance fast.used to read the text from a character-based input stream.
 		FileReader fr=new FileReader("F:\\Java\\core java\\src\\com\\io\\output1.txt");    
         BufferedReader b = new BufferedReader(fr);
         int i;    

@@ -21,30 +21,28 @@ public class InterCommunicationThread {
 		
 		ThreadB b = new ThreadB();
 		b.start();
-		Thread.sleep(1); // if we write here then it will go in dead state... because main thread get sleep here so child get chance
+		//Thread.sleep(1); // if we write here then it will go in dead state... because main thread get sleep here so child get chance
         
-		 System.out.println("Current Thread: " + Thread.currentThread().getName() + " Sum : " + b.sum);  
+		 //System.out.println("Current Thread: " + Thread.currentThread().getName() + " Sum : " + b.sum);  
 //		 it gives main thread gets chance => 0, 
 //		 Child ThreadB gets chance => 5050 
 //		 if both gets chance one by one then => 0<=x<=50555 value
 		
-		// Thread.sleep(1); // main method sleep here
-		// System.out.println("Current Thread: " + Thread.currentThread().getName() + " Sum : " + b.sum);
+		 Thread.sleep(1); // main method sleep here
+		 System.out.println("Current Thread: " + Thread.currentThread().getName() + " Sum : " + b.sum);
 		// It is not recommended method =>because if ThreadB gets completed early then it needs to wait for extra millisecond
 		// or it can get more time then it will print middle value 
 		
-		// b.join(); 
-		// System.out.println("Current Thread: " + Thread.currentThread().getName() + " Sum : " + b.sum);
+		//b.join(); 
+		//System.out.println("Current Thread: " + Thread.currentThread().getName() + " Sum : " + b.sum);
 		// It is not recommended method
 		// Thread B needs to print value when it completed for loop 
 		// but if lets say we have more number of code after for loop then also main method wait to print till ThreadB completes
-		
+//		
 //		synchronized (b) { // main thread gets locks and enter inside
 //			System.out.println("Main Thread Trying to call wait() method : " + Thread.currentThread().getName());
 //			b.wait();
 //			System.out.println("Main thread gets notification and value after thread B completes : " + b.sum);
 //		}
-		
-		
 	}
 }

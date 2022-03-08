@@ -46,8 +46,7 @@ public class ArrayListExample {
 	     while (i.hasNext()) {
 	            System.out.println("Student name : "+ i.next());
 	     }
-	     
-	     
+
 	     // change item
 	     name.add(0, "dagadu");
 	     name.set(1, "sonali");

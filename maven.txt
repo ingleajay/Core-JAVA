@@ -1,3 +1,19 @@
+Maven is "yiddish" {germal language}, it's meaning - accumulator of knowledge
+perform : 
+1. Directory structure to the application 
+2. Download the required dependencies [ jars ]
+3. compile the source code
+4. compile test code
+5. packaging the application - > we can create application format [ jar,war,ear]
+6. run application 
+7. starts the server automatically
+8. depolying the application -> on the server
+9. perform unit testing 
+10. prepare reports and documnets
+11. undeployment of our application
+12. stop server
+13. clean 
+......
 1. What is maven ?
    -> Project Management Tool 
    -> Build Tool
@@ -24,6 +40,37 @@
            -> task > Dependency mangement, Testing, packaging ....
 
    -> Maven done this all for project => Automatic
+
+pom -> Project object model ( pom.xml )
+-> It is heart in maven
+-> provide all the project build configuration which are required by maven
+-> intial version name -> project.xml and now it's pom.xml
+-> when we create maven project then pom.xml file will created automatically
+-> pom.xml responsbility : 
+   -> 1. project description 
+       -> provide details about project version, name and package type..
+       -><project ...>
+           <modelVersion>4.0.0</modelVersion> -> this is represent maven model - version 2.x and 3.x
+	   <groupId>com.jdbctutorial</groupId> 
+           <artifactId>JDBC</artifactId>
+           <version>0.0.1-SNAPSHOT</version>
+           <packaging>jar</packaging> 
+         ...
+	 </project>
+	 --------------------------------------------------------------------------------------
+	-> GroupId : It is name of your company product
+                -> microsoft -> 20 products -> each product has font and style common so make jar so it avaiable to all products
+                -> ex. com.microsoft.software
+        -> ArtifactId : It is name of your project 
+                -> PowerPoint
+        -> Version : It is version of your product
+              -> Release : 2.0, 2.0.1, 2.0.4 => project stable
+              -> snapshot : 2.0-snapshot,2.0.1-snapshot,2.0.4-snapshot  => project unstable under test
+   -> 2. Repository
+   -> 3. Dependency managemnet
+   -> 4. Project Inheritance
+   -> 5. build configuration
+   -> 6. build profiles
 
 4. Others Tools like maven :
    -> MakeFile -> ant -> maven -> gradle for java

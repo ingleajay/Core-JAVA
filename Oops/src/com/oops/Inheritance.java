@@ -53,15 +53,23 @@ public class Inheritance {
 
 	public static void main(String[] args) {
 		
-		// Single inheritance
+		// Inheritance in Java is a mechanism in which
+		// one object acquires all the properties and behaviors of a parent object. 
+		
+		// Adv : 1. Inheritance makes your code reusable. 2. Inheritance is used in method overriding.
+       // parent class - super-class - base class. child class - sub-class - derived class.
+		//  It is also called an IS-A relationship or parent-child relationship.
+
+		
+		// Single inheritance => ( Vehicle, Car ) -> [ car <- vehicle ]
 		Car bmw = new Car("4strokeEngine", 7, 4);
 		System.out.println(bmw.toString());
 		
-		// Hierarchical inheritance
+		// Hierarchical inheritance => ( Vehicle, Car , Bike) -> [ car <- vehicle , bike <- vehicle ]
 		Bike b = new Bike("2strokeEngine", 2, 2);
 		System.out.println(b.toString());
 		
-		// Multilevel inheritance 
+		// Multilevel inheritance =>  ( Vehicle, Bike ,Honda) -> [ Honda <- Bike <- Vehicle ]
 		Honda honda = new Honda(b.Engine, 3, b.Tyre);
 		System.out.println(honda.toString());
 
@@ -72,7 +80,7 @@ public class Inheritance {
 //multiple inheritance : we cannot inherit two parent class for one sub class, 
 //So multiple inheritance and hybrid inheritance is not possible for class in java.
 
-//class Vehicle1{				
+//class Vehicle1{   = > ( Vehicle, Vehicle1, Example) -> [ Example <- Vehicle, Vehicle1 ]		
 //	Vehicle1(){
 //		System.out.println("This is vehicle 1 constructor");
 //	}

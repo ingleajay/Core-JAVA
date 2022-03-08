@@ -3,10 +3,12 @@ package com.oops;
 import java.util.Scanner;
 
 class Students {
+	// data members
     private int sid;
     private String sname;
     private String sbranch;
     private Address address;
+    // getter methods and setter methods
     public int getSid() {
         return sid;
     }
@@ -31,6 +33,7 @@ class Students {
     public void setAddress(Address address) {
         this.address = address;
     }
+    // constructor
     public Students(int sid, String sname, String sbranch, Address address) {
         super();
         this.sid = sid;
@@ -41,6 +44,7 @@ class Students {
     public Students() {
         super();
     }
+    // override toString() method 
     @Override
     public String toString() {
         return "Student [sid=" + sid + ", sname=" + sname + ", sbranch=" + sbranch + ", address=" + address + "]";
@@ -82,6 +86,22 @@ public class Encapsulation {
 
 	public static void main(String[] args) {
 		
+		/* 
+		 Encapsulation : 
+		 // -> Encapsulation -> we need to bind data and behavauior in single unit
+		  * 1. adv - > 1. flexibilty -we can update var value any time by setter method 
+		  * 2. reusablity -> Person class can be reused whenever such type of object is required.  
+		  * 3. maintainablity -> it’s easy to change or update a part of the application without affecting other parts, which reduces the time of maintenance.
+		  * 4. security -> use data hiding 
+	     // ex -> encapsulation = data hiding + abstraction ex.student
+		1. Encapsulation in Java is a process of wrapping code and data and behavoiur together into a single unit, 
+		   for example, a capsule which is mixed of several medicines.
+		2. By providing only a setter or getter method, you can make the class read-only or write-only. 
+		3. It provides you the control over the data
+		4. It is a way to achieve data hiding in Java because other class will not be
+		   able to access the data through the private data members.
+		  */
+		
 		Students s = new Students();
         Address a = new Address();
         System.out.println("student data : ");
@@ -104,7 +124,7 @@ public class Encapsulation {
         System.out.println("Roll No : " + s.getSid());
         System.out.println("Name : " + s.getSname());
         System.out.println("Branch : " + s.getSbranch());
-        System.out.println("city : " + s.getAddress());
+        System.out.println("city : " + s.getAddress().getCity());
         System.out.println("zipcode : " + s.getAddress().getZipcode());
 	}
 }

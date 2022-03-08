@@ -9,6 +9,7 @@ import java.io.Writer;
 public class OutputStreamWriterExample {
 
 	public static void main(String[] args) throws IOException {
+		// OutputStreamWriter -  used to convert character stream to byte stream
 	    OutputStream outputStream = new FileOutputStream("F:\\Java\\core java\\src\\com\\io\\output4.txt");  
         Writer outputStreamWriter = new OutputStreamWriter(outputStream);  
         outputStreamWriter.write("Hello World");  

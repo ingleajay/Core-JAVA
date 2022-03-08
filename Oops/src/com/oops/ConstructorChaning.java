@@ -2,6 +2,9 @@ package com.oops;
 
 public class ConstructorChaning {
 	
+	// Constructor chaining is the process of calling one constructor from another constructor 
+	// with respect to current object.  
+	
 	ConstructorChaning(){
 		this(101);
 		System.out.println("This is default Constructor chaning");

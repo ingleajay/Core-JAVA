@@ -9,13 +9,13 @@ class BufferAndBuilderMethod{
 		//methodInsert();
 		
 		// StringBuffer and StringBuilder replace() - The replace() method replaces the given String from the specified beginIndex and endIndex.
-		// methodReplace();
+		//methodReplace();
 		
 		// StringBuilder and StringBuilder delete() - method of StringBuilder class deletes the string from the specified beginIndex to endIndex.
 		//methodDelete();
 		
 		// StringBuffer and StringBuilder reverse() - method of the StringBuilder class reverses the current String.
-		//methodReverse();
+		methodReverse();
 		
 		
 	}
@@ -40,10 +40,10 @@ class BufferAndBuilderMethod{
 
 	private void methodReplace() {
 		StringBuffer sb=new StringBuffer("Hello");  
-		sb.replace(1,3,"Java");  
+		sb.replace(1,2,"Java");  
 		System.out.println(sb);//prints HJavalo  
 		StringBuilder sd=new StringBuilder("Hello");  
-		sd.replace(1,3,"Java");  
+		sd.replace(1,3,"java");  
 		System.out.println(sd);//prints HJavalo  
 	}
 
@@ -52,7 +52,7 @@ class BufferAndBuilderMethod{
 		sb.insert(1,"Java");//now original string is changed  
 		System.out.println(sb);//prints HJavaello  
 		StringBuilder sd=new StringBuilder("Hello ");  
-		sd.insert(1,"Java");//now original string is changed  
+		sd.insert(1, 99.99);//now original string is changed  
 		System.out.println(sd);//prints HJavaello  
 	}
 

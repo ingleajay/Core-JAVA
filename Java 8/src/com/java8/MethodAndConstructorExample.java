@@ -32,7 +32,7 @@ public class MethodAndConstructorExample {
 		BiFunction<Integer, Integer, Integer> adder = (a,b) -> {return (a+b);}; // override method using lambda
 		System.out.println(adder.apply(10, 20));
 		
-		// use method refrence
+		// use method refrence - static 
 		BiFunction<Integer, Integer, Integer> adder1 = Calservices::add;
 		System.out.println(adder1.apply(30, 20));
 		

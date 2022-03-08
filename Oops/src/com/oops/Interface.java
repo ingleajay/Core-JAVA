@@ -1,13 +1,5 @@
 package com.oops;
 
-abstract class MainVechicleServices {
-	void driving() {
-		System.out.println("This is driving..");
-	}
-	
-	abstract void horning();
-}
-
 interface Vechicle1 {
 	void servicing();
 }
@@ -16,42 +8,85 @@ interface Vechicle2{
 	void reparing();
 }
 
-class Lamborghini extends MainVechicleServices implements Vechicle1,Vechicle2{
+class Auto implements Vechicle1,Vechicle2{
+	void driving() {
+		System.out.println("Auto is driving..");
+	}
 	
+	void horning() {
+		System.out.println("Auto is horning");
+	}
+
 	@Override
 	public void reparing() {
-		System.out.println("Lamborghini is reparing");
+		System.out.println("Auto is horning");
 	}
 
 	@Override
 	public void servicing() {
-		System.out.println("Lamborghini is servicing");
+		System.out.println("Auto is horning");
+	}
+}
+
+class OlaAuto extends Auto{
+	
+	@Override
+	public void reparing() {
+		System.out.println("ola auto is reparing");
+	}
+
+	@Override
+	public void servicing() {
+		System.out.println("ola auto is servicing");
+	}
+}
+
+class olaAuto1 extends Auto implements Vechicle1,Vechicle2{
+
+	@Override
+	void driving() {
+		System.out.println("ola auto1 is driving");
 	}
 
 	@Override
 	void horning() {
-		System.out.println("Lamborghini is horning");
+		System.out.println("ola auto1 is horning");
+	}
+
+	@Override
+	public void reparing() {
+		System.out.println("ola auto1 is reparing");
+	}
+
+	@Override
+	public void servicing() {
+		System.out.println("ola auto1 is servicing");
 	}
 	
-	// method overriding
-	void driving() {
-		System.out.println("Lamborghini is driving");
-	}
 }
-
 
 public class Interface {
 	
 	public static void main(String[] args) {
 		
-		// Multiple inheritance 
-		Lamborghini l =new Lamborghini();
+		// Multiple inheritance -> ( Vehicle, Vehicle1,Auto ) -> [ Auto <- Vehicle, Vehicle1 ]
+		Auto m = new Auto();
+		m.driving();
+		m.horning();
+		m.servicing();
+		m.reparing();
+		
+		// hybrid Inheritance ->  ( Vehicle, Vehicle1, Auto,  OlaAuto ) -> [  OlaAuto <- Auto <- Vehicle, Vehicle1 ]
+		OlaAuto l =new OlaAuto();
 		l.reparing();
 		l.servicing();
 		
-		// hybrid Inheritance
-		l.horning();
-		l.driving();
+		// other way
+		olaAuto1 ol = new olaAuto1();
+		ol.driving();
+		ol.reparing();
+		
+		
 		
 		
 	}

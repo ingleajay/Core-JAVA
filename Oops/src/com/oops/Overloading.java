@@ -35,6 +35,26 @@ public class Overloading {
 //    }
     
 	public static void main(String[] args) {
+		/*
+		Polymorphism : 
+		1. The word “poly” means many and “morphs” means forms, So it means many forms.
+		2. The word polymorphism means having many forms. In simple words, 
+		   we can define polymorphism as the ability of a message to be displayed in more than one form. 
+		   msg -> audio, img, file, text, doc....
+		3.In Java polymorphism is mainly divided into two types: 
+			- Compile-time Polymorphism - (Method overloading) - ( static binding )
+			- Runtime Polymorphism - (Method overriding) - ( dynamic binding ) 
+
+		Overloading : 
+		If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.   
+				1. Constructor overloading
+				2. Opearator overloading
+				3. Method overloading 
+				    - By changing arguments
+				    - By changing data types of arguments
+				    - By changing the return type of method only
+				4. Main overloading
+        */
 		
 		// 1. constructor overloading:
 		

@@ -7,6 +7,7 @@ import java.io.IOException;
 public class BufferInputStreamExample {
 
 	public static void main(String[] args) throws IOException {
+		// used to read information from stream
 		    FileInputStream fin=new FileInputStream("F:\\Java\\core java\\src\\com\\io\\output1.txt");    
 		    BufferedInputStream bin=new BufferedInputStream(fin);    
 		    int i;    

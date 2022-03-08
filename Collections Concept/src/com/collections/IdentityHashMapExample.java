@@ -12,7 +12,7 @@ public class IdentityHashMapExample {
 		Integer i1 = new Integer(10);
 		Integer i2 = new Integer(10);
 		h.put(i1, "Ajay");
-		h.put(i2, "Vijay");
+		h.put(i2, "Ajay");
 		System.out.println("HashMap use equal() method  : " + h); // i1.equals(i2) => it's duplicate so replace it's value
 	
 		// if we use == method
@@ -20,7 +20,7 @@ public class IdentityHashMapExample {
 		Integer j1 = new Integer(10);
 		Integer j2 = new Integer(10);
 		i.put(j1, "Ajay");
-		i.put(j2, "Vijay");
+		i.put(j2, "Ajay");
 		System.out.println("Identity use == method : " + i); // it's treates non-duplicate key
 		
 		

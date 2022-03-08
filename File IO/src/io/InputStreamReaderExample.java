@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 public class InputStreamReaderExample {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		// InputStreamReader -  It reads bytes and decodes them into characters using a specified charset
 		InputStreamReader r = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(r);
         int n1 = Integer.parseInt(br.readLine());

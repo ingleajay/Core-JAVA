@@ -102,6 +102,7 @@ public class ThreadMethodsExample {
 //		r2.start();
 		// t1.run() and t2.run() => if we use this then thread object consider to be normal object call.
 		
+		 //1000ms  = 1sec
 //		SleepMethod s1=new SleepMethod();  
 //		SleepMethod s2=new SleepMethod();  
 //		s1.start();
@@ -111,13 +112,11 @@ public class ThreadMethodsExample {
 //		JoinMethod j2 = new JoinMethod();  
 //		JoinMethod j3 = new JoinMethod(); 
 //		j1.start();
-//		System.out.println("The current thread name is: "+ Thread.currentThread().getName());  
+//		
 //		j1.join();
 //		j2.start();
-//		System.out.println("The current thread name is: " + Thread.currentThread().getName());  
 //		j2.join();
 //		j3.start();
-//		System.out.println("The current thread name is: " + Thread.currentThread().getName());
 		
 //		PriorityMethod p1 = new PriorityMethod();  
 //		PriorityMethod p2 = new PriorityMethod();  
@@ -146,15 +145,14 @@ public class ThreadMethodsExample {
 //        System.out.println("before starting thread isAlive: "+is.isAlive());  
 //		is.start();
 //        System.out.println("After starting thread isAlive: "+is.isAlive());  
-		
+//		
 //		ThreadYieldMethod ty1 = new ThreadYieldMethod();
 //		ThreadYieldMethod ty2 = new ThreadYieldMethod();
-//		ty1.start();
+//		ThreadYieldMethod ty3 = new ThreadYieldMethod();
+//		ty1.yield();
 //		ty2.start();
-//		for (int i=0; i<3; i++)  {  
-//	            ty1.yield();  
-//	            System.out.println(Thread.currentThread().getName() + " control by main");  
-//	    } 
+//		ty2.join();
+//		ty3.start();
 		
 		DaemonThread dt1 = new DaemonThread();
 		DaemonThread dt2 = new DaemonThread();

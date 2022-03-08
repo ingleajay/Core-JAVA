@@ -42,8 +42,8 @@ class SortedPriceAndName1 implements Comparator<Computer7>{
 	@Override
 	public int compare(Computer7 o1, Computer7 o2) {
 		int PriceCompare =o1.getCprice()-o2.getCprice();
-	    int BrandCompare =  o1.getCbrand().compareTo(o2.getCbrand());
-	    return (PriceCompare == 0) ? PriceCompare: BrandCompare;
+//	    int BrandCompare =  o1.getCbrand().compareTo(o2.getCbrand());
+	    return PriceCompare;
 	}
 	
 }

@@ -8,7 +8,7 @@ public class StringTokenizerExample {
 		// class allows you to break a String into tokens. It is simple way to break a String
 		// hasmoreElement, nextToken, nextToken(delim), countToken,nextElements, hasmoreelements
 		
-		 StringTokenizer st = new StringTokenizer("my name is khan"," ");  
+		 StringTokenizer st = new StringTokenizer("my,name,is,khan",",");  
 		 while (st.hasMoreTokens()) {  
 	         System.out.println(st.nextToken());  
 	     }  
@@ -37,5 +37,4 @@ public class StringTokenizerExample {
          /* Prints the number of tokens present in the String */  
          System.out.println("Total number of Tokens: "+t.countTokens());    
 	}
-
 }

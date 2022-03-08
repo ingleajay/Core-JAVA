@@ -7,7 +7,8 @@ public class JavaRefelectionArray {
 
 	public static void main(String[] args) {
 		
-		// # The Java Reflection class provides static methods, and these methods can be used to create and access Java arrays in a dynamic manner.
+		// # The Java Reflection class provides static methods, and
+		// these methods can be used to create and access Java arrays in a dynamic manner.
 		// it is ensures your type of data - type-safe at runtime
 		
 		   int size = 5;
@@ -33,7 +34,7 @@ public class JavaRefelectionArray {
             
             // Two dim
             
-            int[][] m = (int[][]) Array.newInstance(int.class, 2, 2);
+            int[][] m = (int[][]) Array.newInstance(int.class, 2,2);
             int[] row1 = (int[]) Array.get(m,0);
             int[] row2 = (int[]) Array.get(m,1);
             Array.setInt(row1, 0, 110);

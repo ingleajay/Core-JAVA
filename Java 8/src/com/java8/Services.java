@@ -7,7 +7,6 @@ public interface Services {
 	static void add(int a, int b) {
 		System.out.println("Addition : " + (a+b));
 	}
-
 }
 
 

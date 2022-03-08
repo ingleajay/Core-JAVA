@@ -107,5 +107,4 @@ public class ThisKeywordUseCases {
           // or
         new Company().CompanyName().displayName();
 	}
-
 }

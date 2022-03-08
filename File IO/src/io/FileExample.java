@@ -14,7 +14,7 @@ public class FileExample {
 
 	public static void main(String[] args) throws IOException {
 		
-		FileWriter fr = new FileWriter("F:\\Java\\core java\\src\\com\\io\\file.txt");
+		FileWriter fr = new FileWriter("C:\\Users\\ADMIN\\OneDrive\\Desktop\\file.txt");
         BufferedWriter b = new BufferedWriter(fr);
         
         b.write("10"); 
@@ -23,10 +23,10 @@ public class FileExample {
         b.newLine();
         b.close();
         
-        FileReader f = new FileReader("F:\\Java\\core java\\src\\com\\io\\file.txt");
+        FileReader f = new FileReader("C:\\Users\\ADMIN\\OneDrive\\Desktop\\file.txt");
         BufferedReader g = new BufferedReader(f);
         
-        FileWriter res = new FileWriter("F:\\Java\\core java\\src\\com\\io\\res.txt");
+        FileWriter res = new FileWriter("C:\\Users\\ADMIN\\OneDrive\\Desktop\\res.txt");
         BufferedWriter r = new BufferedWriter(res);
 
         String line = "";

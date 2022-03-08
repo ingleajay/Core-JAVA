@@ -53,6 +53,7 @@ public class HashMapExample {
 		m.put("ajay", 10);
         m.put("vijay", 20);
         m.put("sonali", 30);
+        
         System.out.println("Access data : " + m);
         
         for (Map.Entry<String, Integer> e : m.entrySet()) {

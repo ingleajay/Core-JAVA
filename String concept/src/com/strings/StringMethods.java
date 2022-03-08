@@ -9,7 +9,7 @@ class ExamplesOfMethods {
 		// String compareTo() - method compares the given string with the current string lexicographically. It returns a + , - , 0.
 		//methodCompareTo();
 		
-		// String concat() - method combines specified string at the end of this string.
+		//String concat() - method combines specified string at the end of this string.
 		//methodConcat();
 		
 		//  String contains() - method searches the sequence of characters in this string. return boolean
@@ -34,7 +34,7 @@ class ExamplesOfMethods {
 		//methodtrim();
 		
 		// String toLowerCase() -returns the string in lowercase letter. 
-		//methodLowerCase();
+		methodLowerCase();
 		
 		// String toUpperCase() - method returns the string in uppercase letter
 		//methodupperCase();
@@ -126,7 +126,7 @@ class ExamplesOfMethods {
 		String s2="Hello"; 
 		String s3 = "A";
 		String s4 = "B";
-		String s5 = "zebra";
+		String s5 = "XYZ";
 		System.out.println(s1.compareTo(s2)); // "Hello , hello" => "hello" is after "Hello"
 		System.out.println(s1.compareTo(s3)); // "A, hello"  => "hello" is after "A"
 		System.out.println(s3.compareTo(s4)); // "A , B"   => A is before B

@@ -8,6 +8,10 @@ public class ProtectedDog extends ProtectedAnimal{
 
 	public static void main(String[] args) {
 		
+		// 4. Protected Modifier : The access level of a protected modifier is within the package and 
+		// outside the package through child class. 
+		// If you do not make the child class, it cannot be accessed from outside the package.
+		
 		ProtectedDog a = new ProtectedDog();
 		a.barking();
 	}
