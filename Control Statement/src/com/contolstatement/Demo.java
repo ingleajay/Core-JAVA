@@ -114,7 +114,61 @@ public class Demo {
 	        		System.out.println("Produce snickers...");
 	        	}
 	        }
+	        
+	        
+	        // while loop 
+	       // while loop is used when a number of the iteration of the program is not fixed
+	        int num=1;	
+	        while(num<=4)	
+	        {
+	        System.out.println(num);
+	        num++;		
+	        }
+	        
+	        
+	        // print table
+	        int number = 20;
+	        int k=1;    
+	        while(k<=10){    
+	        	System.out.println(number*k);   
+	        	k++;    
+	        } 
+	        
+	        
+	        // do-while loop
+	        //If the number of iteration is not fixed and you must have to execute the loop at least once
+	        int num1=1;
+	        do{
+	        System.out.println(num1);
+	        num1++;		
+	        }while(num1<=4);
+	        
+	        // print table 
+	        int number1 = 20;
+	        int k1=1;    
+	        do{    
+	        	System.out.println(number*k1);   
+	        	k1++;    
+	        }  while(k1<=10);
+	        
+	        
+	        // for loop 
+	        // For loop is used when a number of the iteration of the program is fixed 
+	        int sum = 0;
+	        int n1 = 1000;
+
+	        // for loop
+	        for (int i = 1; i <= n1; ++i) {
+	          // body inside for loop
+	          sum += i;     // sum = sum + i
+	        }
+	           
+	        System.out.println("Sum = " + sum);
 		
+	        int no = 10;
+	        for(int j=1; j<=10;j++) {
+	        	System.out.println(no*j);
+	        }
 	}
 
 }
