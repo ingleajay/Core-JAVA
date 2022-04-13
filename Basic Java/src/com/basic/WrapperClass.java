@@ -10,7 +10,7 @@ public class WrapperClass {
 		// use in synchronization - use objects for multithreading
 		// use in collection framework
 		// wrapper class is immutable
-		// wrapper class can have null but primitivate not have null
+		// wrapper class can have null but primitive date not have null
 		
 		// int -> Integer // char -> Character // byte-> Byte // float -> Float // double -> Double // long -> Long // short -> Short
 		

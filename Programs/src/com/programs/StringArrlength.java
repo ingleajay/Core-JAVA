@@ -18,6 +18,7 @@ public class StringArrlength {
 			int res = findlength(st);
 			System.out.println("Student " + st +  " at " + i + " is " + res);
 		}
+		
 	}
 
 	private static int findlength(String item) {

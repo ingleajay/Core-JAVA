@@ -20,20 +20,27 @@ class UserDefineException extends Exception{
 class ExceptionHandle {
 	
 	void handleComplieException(){
-		//arithmaticException();
+		arithmaticException();
 	    //nullPointerException();
 	    //numberFormatException();
 	    //arrayIndexOutofBoundException();
 	    //stringOutofBoundException();
+		//classnotfound();
 		
-		 nestedTryCatchBlock();
+		 //nestedTryCatchBlock();
 		//throwUncheckException(10);
 		//throwCheckException();
 		
-		throwsKeyword();
+		//throwsKeyword();
 		//finalkeyword();
 	}
 	
+	private void classnotfound() {
+		// TODO Auto-generated method stub
+		System.out.println("Class not found");
+		
+	}
+
 	private void finalkeyword() {
 		final int age = 18;  
 		// age = 55;

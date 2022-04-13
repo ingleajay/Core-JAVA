@@ -2,7 +2,7 @@ package com.oops;
 
 abstract class Cycle {
 	
-	public abstract void driving();	
+	public abstract void driving();
 	
 	public void servicing() {
 		System.out.println("Cycle servicing : This implementation is to be shown");

@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 class Doctor implements Serializable{  
+	//private static final long serialVersionUID= 12663636L;
 	 transient int id;  
 	 String name;  
 	 Doctor(int id, String name) {  
@@ -48,7 +49,7 @@ public class SerializationExample {
          But we don't want to store the original password in the file.
 		 * */
 		  Patient s1 =new Patient(211,"Ravi",101,"Ajay");   
-		  FileOutputStream fout=new FileOutputStream("F:\\Java\\core java\\src\\com\\io\\output6.txt"); 
+		  FileOutputStream fout=new FileOutputStream("F:\\Java\\File IO\\src\\io\\output6.txt"); 
 		  ObjectOutputStream out=new ObjectOutputStream(fout);   
 		  out.writeObject(s1);   
 		  out.flush();    

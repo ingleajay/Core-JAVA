@@ -4,22 +4,22 @@ class ExamplesOfMethods {
 	void stringmethods() {
 		
 		// String charAt() - returns a char value at the given index number
-		// methodCharAt();
+		//methodCharAt();
 		
 		// String compareTo() - method compares the given string with the current string lexicographically. It returns a + , - , 0.
-		//methodCompareTo();
+		methodCompareTo();
 		
 		//String concat() - method combines specified string at the end of this string.
 		//methodConcat();
 		
 		//  String contains() - method searches the sequence of characters in this string. return boolean
-		//methodContains();
+		methodContains();
 		
 		// String indexOf() - method returns the position of the first occurrence of the specified character or string in a specified string.
-		//methodIndexOf();
+		methodIndexOf();
 		
 		// String replace() - method returns a string replacing all the old char or CharSequence to new char or CharSequence.
-		//methodReplace();
+		methodReplace();
 		
 		// String split() - method splits this string against given regular expression and returns a char array.
 		//methodSplit();
@@ -28,10 +28,10 @@ class ExamplesOfMethods {
 		//methodLength();
 		
 		// String substring() - returns a part of the string.
-		//methodSubstring();
+		methodSubstring();
 		
 		//  String trim() - method eliminates leading and trailing spaces
-		//methodtrim();
+		methodtrim();
 		
 		// String toLowerCase() -returns the string in lowercase letter. 
 		methodLowerCase();
@@ -122,8 +122,8 @@ class ExamplesOfMethods {
 		// if s1 < s2, it returns negative number  => s1 before s2
 		// if s1 == s2, it returns 0               => s1 == s2
 		
-		String s1="hello";  
-		String s2="Hello"; 
+		String s1="Hello";  
+		String s2="hello"; 
 		String s3 = "A";
 		String s4 = "B";
 		String s5 = "XYZ";

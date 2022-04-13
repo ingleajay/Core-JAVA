@@ -8,8 +8,8 @@ public class FileInputStreamExample {
 	public static void main(String[] args) throws IOException {
 		
 		
-		// 2. FileInputStream -  used for reading byte-oriented data like audio and text
-        FileInputStream fin=new FileInputStream("F:\\Java\\core java\\src\\com\\io\\output1.txt");    
+		//FileInputStream -  used for reading byte-oriented data
+        FileInputStream fin=new FileInputStream("F:\\Java\\File IO\\src\\io\\output1.txt");    
         int i=0;    
         while((i=fin.read())!=-1){    
          System.out.print((char)i);    

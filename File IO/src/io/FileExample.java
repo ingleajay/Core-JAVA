@@ -11,10 +11,13 @@ import java.util.Scanner;
 
 public class FileExample {
 
-
 	public static void main(String[] args) throws IOException {
 		
-		FileWriter fr = new FileWriter("C:\\Users\\ADMIN\\OneDrive\\Desktop\\file.txt");
+		// 1. file - store all value one by one 
+		// 2. read file and do opeartions - Add, Sub, Mul, Div
+		// 3. store your result in new file - result.txt
+		
+		FileWriter fr = new FileWriter("F:\\Java\\File IO\\src\\io\\output7.txt");
         BufferedWriter b = new BufferedWriter(fr);
         
         b.write("10"); 
@@ -23,22 +26,21 @@ public class FileExample {
         b.newLine();
         b.close();
         
-        FileReader f = new FileReader("C:\\Users\\ADMIN\\OneDrive\\Desktop\\file.txt");
+        FileReader f = new FileReader("F:\\Java\\File IO\\src\\io\\output7.txt");
         BufferedReader g = new BufferedReader(f);
         
-        FileWriter res = new FileWriter("C:\\Users\\ADMIN\\OneDrive\\Desktop\\res.txt");
+        FileWriter res = new FileWriter("F:\\Java\\File IO\\src\\io\\res.txt");
         BufferedWriter r = new BufferedWriter(res);
 
         String line = "";
-        List<String> s = null;
+        String s[] = null;
         while ((line = g.readLine()) != null) {
             line = line + " " + g.readLine();
-            String[] a = line.split("\\s");
-            s = Arrays.asList(a);
+            s = line.split("\\s");
             System.out.println("All Operation Done");
         }
-        int x = Integer.parseInt(s.get(0));
-        int y = Integer.parseInt(s.get(1));
+        int x = Integer.parseInt(s[0]);
+        int y = Integer.parseInt(s[1]);
         add(x,y,r);
         sub(x,y,r);
         mul(x,y,r);

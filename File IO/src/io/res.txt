@@ -1,0 +1,4 @@
+Addition : 30
+substraction : -10
+multiplication : 200
+Division : 0

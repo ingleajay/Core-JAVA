@@ -3,13 +3,13 @@ package com.strings;
 class BufferAndBuilderMethod{
 	void bufferAndbuildermethods() {
 		// StringBuffer and StringBuilder append() - concatenates the given argument with this String.
-		//methodAppend();
+		methodAppend();
 		
 		// StringBuffer and StringBuilder insert() -  inserts the given String with this string at the given position.
-		//methodInsert();
+		methodInsert();
 		
 		// StringBuffer and StringBuilder replace() - The replace() method replaces the given String from the specified beginIndex and endIndex.
-		//methodReplace();
+		methodReplace();
 		
 		// StringBuilder and StringBuilder delete() - method of StringBuilder class deletes the string from the specified beginIndex to endIndex.
 		//methodDelete();

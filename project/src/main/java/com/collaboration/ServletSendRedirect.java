@@ -15,7 +15,7 @@ public class ServletSendRedirect extends HttpServlet {
 		// The sendRedirect() method works at client side.
 		// It always sends a new request.
 		response.setContentType("text/html");  
-		PrintWriter pw=response.getWriter();  
+		 
 		response.sendRedirect("http://www.google.com");  
 	}
 }

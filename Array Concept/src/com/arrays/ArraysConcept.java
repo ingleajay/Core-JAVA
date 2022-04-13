@@ -10,7 +10,7 @@ public class ArraysConcept {
 		// The manipulation includes searching, sorting, list view of an array and others.
 		// it is used in collections
 		
-		int arr[] = {1,3,0,12,10};
+		int arr[] = {3,3,0,12,10};
 		
 		// sort array ele
 		Arrays.sort(arr);

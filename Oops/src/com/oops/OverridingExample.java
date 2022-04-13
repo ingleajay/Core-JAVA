@@ -7,9 +7,12 @@ class Bank{
 }
 
 class SBI extends Bank{
-    int getROI() {
-        return 8;
-    }
+
+	@Override
+	int getROI() {
+		return 8;
+	}
+    
 }
 
 class ICICI extends Bank{

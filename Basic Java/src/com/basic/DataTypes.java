@@ -5,14 +5,14 @@ public class DataTypes {
 	public static void main(String[] args) {
 		
 		// It's same as int data type, It saves memory space. 
-		// It is 4 times smaller than the integer.
+		// It is 4 times smaller than the integer. = 1 byte = 8 bit
 		byte stud_age = 10;
 		byte stud_marks = (byte) 98.4f;
 	    System.out.println("Student age:" + stud_age); 
 	    System.out.println("Student marks:" + stud_marks); 
 	    
 	    // Short data type is 2 byte and it can also be used as int data type
-	    // It is 2 times smaller than the integer.
+	    // It is 2 times smaller than the integer. = 2 byte = 16 bit 
 	    short age = 20;
         System.out.println("Student age:" + age); 
         

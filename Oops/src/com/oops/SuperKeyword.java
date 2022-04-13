@@ -4,8 +4,8 @@ class College1 {
     String location = "Mumbai";
 
 }
-class CsBranch extends College1 {
-    String location = "Delhi";
+class CsBranch {
+   String location = "Delhi";
     void display() {
     	System.out.println("College Location in : " + location);
         System.out.println("Cs Branch in : " + location);

@@ -3,6 +3,16 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+	<filter>
+		<filter-name>Fvalidate</filter-name>
+		<display-name>Fvalidate</display-name>
+		<description></description>
+		<filter-class>com.filter.Fvalidate</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Fvalidate</filter-name>
+		<url-pattern>/freg</url-pattern>
+	</filter-mapping>
   <servlet>
   	<servlet-name>AddServlet</servlet-name>
   	<display-name>AddServlet</display-name>
@@ -260,10 +270,20 @@
   	<param-value>JAVA</param-value>
   	</init-param>
   </servlet>
+  <servlet>
+  	<servlet-name>CoutTag</servlet-name>
+  	<display-name>CoutTag</display-name>
+  	<description></description>
+  	<servlet-class>com.jstltags.CoutTag</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>configjsp</servlet-name>
   	<url-pattern>/configobj</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CoutTag</servlet-name>
+  	<url-pattern>/cout</url-pattern>
   </servlet-mapping>
   
 </web-app>

@@ -3,7 +3,7 @@ package com.strings;
 public class StringBufferExample {
 
 	public static void main(String[] args) {
-		// Every method is non-synchronized -> Big rice plate -> 10 person to eat -> simul -> come -> eating 
+		// Every method is synchronized -> Big rice plate -> 10 person to eat -> simul -> come -> eating 
 		// Need : if content is changes frequently use string buffer
 		// String buffer is not uses string constant pool concept
 		// String buffer is mutable -> can be modify
@@ -19,7 +19,7 @@ public class StringBufferExample {
 		StringBuffer s3=new StringBuffer("Namrata");
 		StringBuffer s4=new StringBuffer("Namrata");
 		System.out.println("By ==  : " + (s3 == s4)); // points to refrences same or not s1 and s2 different object
-		System.out.println("By equals()  : " + (s3.equals(s4))); // it is not override by Object Class so it works like equals method of Object class
+		System.out.println("By equals()  : " + (s3.toString().equals(s4.toString()))); // it is not override by Object Class so it works like equals method of Object class
 				
 		// capacity = how many char value is hold
 		// default capacity = 16

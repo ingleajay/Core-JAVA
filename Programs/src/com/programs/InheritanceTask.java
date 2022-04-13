@@ -15,7 +15,6 @@ class Exam{
 		this.questions = questions;
 		this.subject_name = subject_name;
 	}
-
 }
 
 class Subject extends Exam{

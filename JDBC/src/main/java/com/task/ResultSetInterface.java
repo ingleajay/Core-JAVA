@@ -30,8 +30,8 @@ public class ResultSetInterface {
 		}
 		
 		// first() method
-		rs.absolute(1);
-		System.out.println("First row : ");
+//		rs.absolute(1);
+//		System.out.println("First row : ");
 		
 	}
 }

@@ -57,7 +57,7 @@ public class Inheritance {
 		// one object acquires all the properties and behaviors of a parent object. 
 		
 		// Adv : 1. Inheritance makes your code reusable. 2. Inheritance is used in method overriding.
-       // parent class - super-class - base class. child class - sub-class - derived class.
+        // parent class - super-class - base class. child class - sub-class - derived class.
 		//  It is also called an IS-A relationship or parent-child relationship.
 
 		

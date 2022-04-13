@@ -79,7 +79,7 @@ public class BasicsOfArray {
 		System.out.println("length of array :"+jj.length);
 		
 		// array can not have size negative
-		int[] jp = new int[-2]; // negative array size exception
+		//int[] jp = new int[-2]; // negative array size exception
 		
 		// array can have charcter as size
 		int[] jk = new int['a'];

@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
 public class DeserializationExample {
 
 	public static void main(String[] args) throws ClassNotFoundException, IOException {
-		  ObjectInputStream in=new ObjectInputStream(new FileInputStream("F:\\Java\\core java\\src\\com\\io\\output6.txt"));  
+		  ObjectInputStream in=new ObjectInputStream(new FileInputStream("F:\\Java\\File IO\\src\\io\\output6.txt"));  
 		  Patient s=(Patient)in.readObject();  
 		  System.out.println("Patient Details : ");
 		  System.out.println("Patient id : " + s.pid + "\n" + "Patient Name : " + s.pname);
