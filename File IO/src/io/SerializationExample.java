@@ -52,7 +52,7 @@ public class SerializationExample {
 		  FileOutputStream fout=new FileOutputStream("F:\\Java\\File IO\\src\\io\\output6.txt"); 
 		  ObjectOutputStream out=new ObjectOutputStream(fout);   
 		  out.writeObject(s1);   
-		  out.flush();    
+		    
 		  out.close();    
 		  System.out.println("success"); 
 	}

@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
-    <fullyQualifiedTypeName name="com.springtutorial.stereotype.primitive.Teacher"/>
-    <fullyQualifiedTypeName name="com.springtutorial.stereotype.primitive.TeacherClub"/>
-    <fullyQualifiedTypeName name="com.springtutorial.stereotype.primitive.Teacher1"/>
-    <fullyQualifiedTypeName name="com.springtutorial.beanscope.singleton.Hospital"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="com.springtutorial.spel.DemoVariable"/>
-    <fullyQualifiedTypeName name="com.springtutorial.spel.DemoStaticMethodAndVar"/>
-    <fullyQualifiedTypeName name="com.springtutorial.spel.DemoInstanceMethodAndVar"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.config"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.Courses"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.Teacher"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.Friends"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.project.App"/>
-    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.project.Config"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.springtutorial.withoutxml.project.Subject"/>
@@ -40,7 +28,6 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="javax.activation.DataSource"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="com.sorm.SpringOrm.annotation.Config"/>
     <fullyQualifiedTypeName name="com.sorm.SpringOrm.annotation.StudentDaoImpl"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
@@ -60,4 +47,17 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.handler.HandlerInterceptorAdapter"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Configurable"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.saop.SpringAop.Config"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="com.saop.SpringAop.services.PaymentService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.saop.SpringAop.services.PaymentServiceImpl"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+    <fullyQualifiedTypeName name="com.saop.SpringAop.aspect.PaymentAspect"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.aspectj.apache.bcel.util.Repository"/>
 </qualifiedTypeNameHistroy>

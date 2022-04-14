@@ -18,7 +18,12 @@ public class FileWriterExample {
 				             // database - server used database to get data
 				 // Security - file not provide security and it is access by users/
 				             // database - more secure and also fo role based security- data ( student, faculty )
-			
+				              * 
+				              * 
+				              * It is not have recovering data or backup
+			adv : 
+			1. it is less expensive than DB
+			2. It is less complex than DB
 			
 			2. Java uses the concept of a stream to make I/O operation fast. 
 			   The java.io package contains all the classes required for input and output operations.
