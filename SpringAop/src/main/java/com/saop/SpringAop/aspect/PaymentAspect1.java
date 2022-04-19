@@ -24,9 +24,7 @@ public class PaymentAspect1 {
 		System.out.println("After payment service....");
 	}
 	
-	public void ReturningAdvice(Object status){
-		System.out.println("Status : "+ status);
-	}
+	
 	
 	public void thowexception(Exception error) {
 		System.out.println("There is some error we will look on it. " + error);
@@ -44,4 +42,7 @@ public class PaymentAspect1 {
 	      System.out.println("After around method ( return value) : " + result);
 	}
 	
+	public void ReturningAdvice(Object result){
+		System.out.println("Status : "+ result);
+	}
 }

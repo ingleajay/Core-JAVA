@@ -29,7 +29,7 @@
      
      <!-- @AfterReturning -->  
      <aop:pointcut id="pointCutAfterReturning"   expression="execution(* *.*.*.*.PaymentServiceImpl1.makePayment(..))" />  
-     <aop:after-returning method="ReturningAdvice" returning="status" pointcut-ref="pointCutAfterReturning" />  
+     <aop:after-returning method="ReturningAdvice" returning="result" pointcut-ref="pointCutAfterReturning" />  
      
      <!-- @AfterThrowing -->  
      <aop:pointcut id="pointCutAfterThrowing" expression="execution(* *.*.*.*.PaymentServiceImpl1.makePayment(..))"  />  

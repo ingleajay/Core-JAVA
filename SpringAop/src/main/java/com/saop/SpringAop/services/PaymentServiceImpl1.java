@@ -1,6 +1,5 @@
 package com.saop.SpringAop.services;
 
-import org.springframework.stereotype.Component;
 
 public class PaymentServiceImpl1{
 
@@ -17,6 +16,7 @@ public class PaymentServiceImpl1{
 		
 		userdetails();
 		return status;
+		
 	}
 	
 	public static void userdetails() {

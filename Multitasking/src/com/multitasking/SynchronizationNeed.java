@@ -1,6 +1,6 @@
 package com.multitasking;
 
-class Cricketer{
+class Cricketer1{
 	
 	// if method is not sync then it will executed simultonulsy.
 	// sync required -> object level required
@@ -45,9 +45,9 @@ class Cricketer{
 }
 
 class SendWishMessage extends Thread{
-	Cricketer c;
+	Cricketer1 c;
 	String name;
-	SendWishMessage(String name, Cricketer c) {
+	SendWishMessage(String name, Cricketer1 c) {
 		this.c = c;
 		this.name = name;
 	}
@@ -63,10 +63,17 @@ class SendWishMessage extends Thread{
 
 
 public class SynchronizationNeed {
+	
+	// 1. It is only for method and block but not for class and variable
+	// 2. better option where we want to allow only one thread to access the shared resource.
+	// 3. Disadv - it increases waiting time-of the Thread and effects performance of the system.
+	// 4. Internally synchronization concept is implemented by using lock concept.
+	// 5. Thread wants to do opeartions on object. -> Thread will get lock and enter into section - relase lock when completed
+	
 
 	public static void main(String[] args) {
-	    Cricketer c1 = new Cricketer();
-	    Cricketer c2 = new Cricketer();
+	    Cricketer1 c1 = new Cricketer1();
+	    Cricketer1 c2 = new Cricketer1();
 	    SendWishMessage s1 = new SendWishMessage("Dhoni", c1);
 	    SendWishMessage s3 = new SendWishMessage("Sachin", c1);
         SendWishMessage s2 = new SendWishMessage("Youraj", c1);

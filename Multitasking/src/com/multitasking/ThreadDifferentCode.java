@@ -45,7 +45,7 @@ public class ThreadDifferentCode{
 		
 		    // Thread1 -> factorial number
 		    // Thread2 -> muplication of number
-		    System.out.println("Thread " + Thread.currentThread().getId()+ " is running");
+		    System.out.println("Thread main " + Thread.currentThread().getId()+ " is running");
 
             Thread object = new Thread(new Thread1(5));
             object.start();
