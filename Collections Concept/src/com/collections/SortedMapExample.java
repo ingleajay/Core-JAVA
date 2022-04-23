@@ -58,6 +58,11 @@ class SortedPriceAndName3 implements Comparator<Computer11>{
 }
 
 public class SortedMapExample {
+//	
+//	1. it is child interface of Map
+//	2. When want key value pair in sorted order
+//	    → sorting is based on keys
+
 
 	public static void main(String[] args) {
 		

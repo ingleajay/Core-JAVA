@@ -47,6 +47,13 @@ class Computer9 {
 }
 
 public class LinkedHashMapExample {
+	
+//	1. use data structure → LinkedList and hashtable
+//	2. insertion is preversed
+//	Where to use :  Cache memory ⇒ primary memory and second memory 
+//
+//	                               → duplicated not allowed and insertion is preserved.
+
 
 	public static void main(String[] args) {
 		

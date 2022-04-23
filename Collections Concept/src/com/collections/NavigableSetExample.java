@@ -7,6 +7,17 @@ public class NavigableSetExample {
 
 	public static void main(String[] args) {
 		
+		//it is interface
+
+		//It used to fill gaps of sortedSort like we can’t tell that before one object what is last element 
+		//such things not possible by sortedsort. ( ex. flights timing)
+//		1. lower(object o) → before + last ele :  ele < obj
+//		2. floor(object o ) → before + last ele  :  ele ≤ obj
+//		3. higher(object o) → after + first ele   : ele > obj
+//		2. ceiling(object o ) → after + first ele  : ele ≥ obj
+
+
+		
 		NavigableSet<Integer> t = new TreeSet<Integer>();
 		t.add(1000);
 		t.add(2000);

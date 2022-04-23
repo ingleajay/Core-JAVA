@@ -12,6 +12,8 @@ public class PredicatePredefineFunction {
 
 	public static void main(String[] args) {
 		
+		// Predicate - To take some input and perform some conditional check and  return boolean value
+		
 		// check number is even or not ? // test() 
 		//Predicate<Integer> g = p->p%2==0;
 		IntPredicate g = p->p%2==0;

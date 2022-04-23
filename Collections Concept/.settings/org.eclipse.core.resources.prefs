@@ -1,3 +1,15 @@
 eclipse.preferences.version=1
+encoding//src/com/collections/ArrayListExample.java=UTF-8
 encoding//src/com/collections/ComparableExample.java=UTF-8
+encoding//src/com/collections/HashMapExample.java=UTF-8
+encoding//src/com/collections/HashSetExample.java=UTF-8
+encoding//src/com/collections/IdentityHashMapExample.java=UTF-8
+encoding//src/com/collections/LinkedHashMapExample.java=UTF-8
+encoding//src/com/collections/LinkedHashSetExample.java=UTF-8
+encoding//src/com/collections/LinkedListExample.java=UTF-8
 encoding//src/com/collections/NavigableSetExample.java=UTF-8
+encoding//src/com/collections/PriorityQueueExample.java=UTF-8
+encoding//src/com/collections/SortedMapExample.java=UTF-8
+encoding//src/com/collections/TreeSetExample.java=UTF-8
+encoding//src/com/collections/VectorExample.java=UTF-8
+encoding//src/com/collections/WeakHashMapExample.java=UTF-8

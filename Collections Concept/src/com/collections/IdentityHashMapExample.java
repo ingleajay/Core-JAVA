@@ -7,6 +7,13 @@ public class IdentityHashMapExample {
 
 	public static void main(String[] args) {
 		
+//		 we have two ways to find identity ⇒ equals and == 
+//			→ equals ⇒ used to return true if object content same
+//                   - in hashmap we use equals() method for identify duplicate value
+//			→  ==    ⇒ used to return true if object reference same
+//			         - to make non-duplicate use identity map
+
+		
 		// Need of hash map
 		HashMap<Integer,String> h = new HashMap<>();
 		Integer i1 = new Integer(10);

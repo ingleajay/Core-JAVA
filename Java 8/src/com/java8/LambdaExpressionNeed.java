@@ -39,6 +39,14 @@ class Person1{
 }
 
 public class LambdaExpressionNeed {
+	
+	// lambda is anonymous function - no name, no modifier, no return type
+	
+	// adv - reduce lines of code , to write more redabale code and maintable code
+	
+	// functional interface -> it is interface contains only one abstract method 
+	   // -> to call lambda we need functional interface
+	      
 
 	public static void main(String[] args) {
 		

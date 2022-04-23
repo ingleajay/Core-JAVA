@@ -15,6 +15,15 @@ class Computer2 {
 }
 
 public class LinkedListExample {
+	
+//	→ contain duplicate elements.
+//	→insertion order.
+//	→ non synchronized.
+//	→ where to use
+//	     → worst choice → when we want to retrieve data from a very large data set because it doesn't has
+//	     //RandomeAccessInterface and for retrieve traverse from start to end
+//	     →  It is best choice if we use add and remove in middle because of shift → if want then use linked list
+// it based on pointers so no need to intial capacity
 
 	public static void main(String[] args) {
 

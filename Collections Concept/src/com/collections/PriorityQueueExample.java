@@ -52,7 +52,20 @@ class SortedPriceAndName4 implements Comparator<Computer12>{
 }
 
 public class PriorityQueueExample {
-
+	
+//	1. it is child interface of collection
+//	2. where to use : 
+//	    → if want to execute group of individual group of objects prior to processing.
+//	ex. Temple queue and normal person and VIP person → object , non-prior , prior
+//	1. elements can inserted base on some priority
+//	2. it has default or customize sorting order
+//	3. insertion order is not preserved.
+//	4. duplicates are not allowed
+//	5.   → default order → homo and comparable
+//	      →customize order → not homo and comparable 
+//	6. null not possible
+// Some Platform won’t support proper support for thread priority and priority queue
+	
 	public static void main(String[] args) {
 		
 		PriorityQueue templequeue = new PriorityQueue();

@@ -6,6 +6,16 @@ import java.util.TreeMap;
 public class NavigableMapExample {
 
 	public static void main(String[] args) {
+//		NavigableMap : It is child interface of sortedMap 
+//		1. defines serval method for navigation purpose
+//		floorKey(e)
+//		lowerKey(e)
+//		higherKey(e)
+//		celingKey(e)
+//		pollFirstEntryKey()
+//		pollLastEntryKey()
+//		descendingMap()
+
 		
 		NavigableMap<Integer, String> t = new TreeMap<Integer, String>();
 		t.put(1,"Ajay");

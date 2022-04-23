@@ -54,6 +54,8 @@ public class FunctionPredefineExample {
 
 	public static void main(String[] args) {
 		
+		// Function - To take some input and perform some opeartions and not return boolean value
+		
 		// first arg : input and second arg : return value
 		//Function<Integer, Integer> i = (j) -> (j*j);
 		IntFunction<Integer> i = (j) -> (j*j);

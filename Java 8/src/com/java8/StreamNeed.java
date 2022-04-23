@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class StreamNeed implements Comparator{
+	
+	// if we want to represnt group of objects as a single entity then go for collection 
+	// stream introduced in 1.8 version
+	// Stream API  is basically perform bulk opeartion and perform the object collection 
 
 	public static void main(String[] args) {
 		

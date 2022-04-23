@@ -15,6 +15,21 @@ class Computer {
 }
 
 public class ArrayListExample {
+	
+//	→ re-sizable array
+//	→ duplicate number
+//	→ insertion order preserved
+//	→ heterogeneous object ( except treeset and tree map ) all will do
+//	→ every method present in arraylist is non sync //
+//	→ multiple threads can use so it is not thread safe
+//	→ perform fast than vector
+//	→ where to use
+//	  → when we want to retrieve data from a very large data set because it has RandomeAccessInterface
+//	  →  It is worst choice if we use add and remove in middle because of shift → if want then use linkedlist
+//	→ The default size of ArrayList in java is 10
+//	     new capacity = (current capacity * 3/2) + 1
+//       ex. cc = 10; nc = 15+1 = 16 
+
 
 	public static void main(String[] args) {
 		

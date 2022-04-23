@@ -38,6 +38,17 @@ class Computer5 {
 }
 
 public class LinkedHashSetExample {
+	
+//	1. It is combination of Linkedlist and hash Table ⇒ allowed insertion order but not duplicate value
+//	2. Java LinkedHashSet class contains unique elements only like HashSet.
+//	3. Java LinkedHashSet class provides all optional set operation and permits null elements.
+//	4. Java LinkedHashSet class is non synchronized.
+//	5. Java LinkedHashSet class maintains insertion order.
+//	6. It has same type of constructor as HashSet()
+//	default capacity : 16 and default  fill ratio / Load factor : 0.75 
+//	Where to use :  Cache memory ⇒ primary memory and second memory 
+	//→ duplicated not allowed and insertion is preserved.
+
 
 	public static void main(String[] args) {
 		LinkedHashSet s = new LinkedHashSet();

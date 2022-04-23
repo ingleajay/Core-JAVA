@@ -100,7 +100,8 @@ public class ThreadMethodsExample {
 //		RunMethod r2=new RunMethod();  
 //		r1.start();
 //		r2.start();
-		// t1.run() and t2.run() => if we use this then thread object consider to be normal object call.
+		
+		 //t1.run() and t2.run() => if we use this then thread object consider to be normal object call.
 		
 		 //1000ms  = 1sec
 //		SleepMethod s1=new SleepMethod();  
@@ -112,7 +113,6 @@ public class ThreadMethodsExample {
 //		JoinMethod j2 = new JoinMethod();  
 //		JoinMethod j3 = new JoinMethod(); 
 //		j1.start();
-//		
 //		j1.join();
 //		j2.start();
 //		j2.join();
@@ -146,23 +146,22 @@ public class ThreadMethodsExample {
 //		is.start();
 //        System.out.println("After starting thread isAlive: "+is.isAlive());  
 //		
-//		ThreadYieldMethod ty1 = new ThreadYieldMethod();
-//		ThreadYieldMethod ty2 = new ThreadYieldMethod();
-//		ThreadYieldMethod ty3 = new ThreadYieldMethod();
-//		ty1.yield();
-//		ty2.start();
-//		ty2.join();
-//		ty3.start();
+		ThreadYieldMethod ty1 = new ThreadYieldMethod();
+		ThreadYieldMethod ty2 = new ThreadYieldMethod();
+		ThreadYieldMethod ty3 = new ThreadYieldMethod();
+		ty1.yield();
+		ty2.start();
+		ty2.join();
+		ty3.start();
 		
 		DaemonThread dt1 = new DaemonThread();
 		DaemonThread dt2 = new DaemonThread();
 		DaemonThread dt3 = new DaemonThread();
 		
 		dt1.setDaemon(true);
-		dt1.start();
+	
 		dt2.start();
 		dt3.start();
 
-	 	
 	}
 }

@@ -4,6 +4,13 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class DQueueWithArrayExample {
+	
+//	Deque : ArrayDequeue and LinkedList
+//	1. The Deque is related to the double-ended queue that supports addition or removal of elements from either end of the data structure
+//	2. insertion order maintaine
+//	3. duplicated allowed
+//	4. addfirst , addlast , pollfirst, polllast, removefirst,removelast, offerfirst, offerlast
+
 
 	public static void main(String[] args) {
 		

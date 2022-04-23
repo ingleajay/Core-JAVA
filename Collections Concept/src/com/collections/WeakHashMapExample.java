@@ -19,6 +19,11 @@ class Temp{
 }
 
 public class WeakHashMapExample {
+	
+//	Need : when object is not reference to anyone then we want this to be manage by GC internally.
+//	Object ( not ref )  → GC → HapMap  ⇒ Remain Same
+//	Object ( not ref ) → GC → WeakHashMap ⇒ object null
+
 
 	public static void main(String[] args) {
 		

@@ -6,6 +6,8 @@ public class SupplierPredefine {
 
 	public static void main(String[] args) {
 		
+		// Supplier - it supply required object and not take any input
+		
 		// Example : to generate OTP
 		
 		Supplier<String> otp = () -> {

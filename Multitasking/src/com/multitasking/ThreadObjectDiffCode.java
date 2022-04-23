@@ -18,6 +18,7 @@ public class ThreadObjectDiffCode {
 
 			@Override
 			public void run() {
+				System.out.println(Thread.currentThread().getName());
 				System.out.println("Addition : " + (i+j));
 			}
 			
@@ -28,6 +29,8 @@ public class ThreadObjectDiffCode {
 
 			@Override
 			public void run() {
+				System.out.println(Thread.currentThread().getName());
+
 				System.out.println("Substraction : " + (i-j));
 			}
 		};

@@ -23,6 +23,19 @@ interface operation{
 
 public class MethodAndConstructorExample {
 	
+	// It is used ofetn used to create simple lambda expression by refrencing exisiting methods
+	// replace lambda exp by method ref
+	
+//	Method reference is used to refer method of functional interface.
+	// types : 1. ref a static method, ref a instance method, ref to constructor
+//	1. It uses for to use existing methods in code.
+//	2. if static method ⇒ classname : : method name
+//	3. if instance method ⇒ obj name : : method name
+//	4. if constrctor ⇒ classname :: new
+//	    → if method returns object
+//	4. just care about method argument must be same of ref method. ex run () and m1() should have same arg
+
+	
 	public static int minus(int a, int b) {
 		return (a-b);
 	}

@@ -15,6 +15,20 @@ class Computer1 {
 }
 
 public class VectorExample {
+	
+//	→ re-sizable array
+//	→ duplicate number
+//	→ insertion order preserved
+//	→ heterogeneous object ( except treeset and tree map ) all will do
+//→ Vector is like the dynamic array which can grow or shrink its size
+//→ every method present in vector is sync 
+//→ one thread at time can use so it is thread safe
+//→ perform is low than arraylist
+//	→ The default size of vector in java is 10
+//	new capacity = 2*current capacity;
+//	ex. cc = 10; nc = 20
+
+
 
 	public static void main(String[] args) {
 		        // for hectrogeneous data

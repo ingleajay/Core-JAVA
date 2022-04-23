@@ -38,6 +38,19 @@ class Computer4 {
 }
 
 public class HashSetExample {
+	
+//	HashSet class is used to create a collection that uses a hash table for storage.
+//	→ HashSet stores the elements by using a mechanism called hashing.
+//	→ HashSet contains unique elements only.
+//	→ hectrogenous allowed
+//	→ allow null value at once only
+//	→ it is non sync 
+//	→ it hasn’t have random access
+//	disadv : you are not able to tell which first ele and last ele because of insertion not preserved.
+//	Where to used:  search elements because hash table use hash code and it takes less time.
+//	default capacity : 16 and default  fill ratio / Load factor : 0.75 
+// Define fill ratio / load factor : After filling how much ratio a new hashset object will be created 
+	//, ratio is called as fill ratio or load factor.
 
 	// not in order and unique ele
 	public static void main(String[] args) {

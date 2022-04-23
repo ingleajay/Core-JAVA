@@ -5,6 +5,11 @@ import java.util.Optional;
 public class OptionalClassExample {
 
 	public static void main(String[] args) {
+//		Optional Class :
+//			1.If developer gets every time Null pointer exception in code then we can reduced by handling with null pointer check
+//			2. to avoid such case we have optional class to avoid null pointer exception
+//			3. to make clean code
+
 		
 		// need of optional class
 		// method 1:

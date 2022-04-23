@@ -49,6 +49,8 @@ public class ConsumerPredefine {
 
 	public static void main(String[] args) {
 		
+		// Consume - accept some input and perform required opeations and not return anything...
+		
 		Consumer<String> name = (s) -> System.out.println("Student Name : " + s);
 		System.out.println("Give Student Name : " );
 		name.accept("Ajay Ingle");

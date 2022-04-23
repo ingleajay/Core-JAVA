@@ -46,6 +46,15 @@ class Computer8 {
 }
 
 public class HashMapExample {
+	
+//	1. It is based on hashtable and based on hashcode of keys only
+//	2. hectrogenous allowed
+//	3. null allowed for keys but only onces , null allowed for values multiple
+//	4. best choice - > search operation
+//	5. not sync ⇒ not thread-safe
+//	6.insertion order not preserved
+//	default capacity = 16  , load factor : 0.75
+
 
 	public static void main(String[] args) {
 		

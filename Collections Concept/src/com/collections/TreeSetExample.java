@@ -47,6 +47,12 @@ class SortedPriceAndName implements Comparator<Computer6>{
 }
 
 class TreeSetExample {
+	
+//	1. balanced tree - AVL tree  - self balancing tree
+//	2. Not insertion order
+//	3. Not duplicate
+//	4. Not heterogeneous ⇒ ClassCastException 
+
 
 	public static void main(String[] args) {
 			

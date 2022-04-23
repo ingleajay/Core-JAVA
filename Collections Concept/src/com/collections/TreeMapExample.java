@@ -55,6 +55,12 @@ class SortedPriceAndName2 implements Comparator<Computer10>{
 }
 
 public class TreeMapExample {
+	
+//	1. It uses Red-Black Tree data structure
+//	2. not insertion order
+//	3. sorting on keys 
+//	4. duplicate keys not allowed but duplicate values are allowed.
+
 
 	public static void main(String[] args) {
 		TreeMap s = new TreeMap(); // hectro

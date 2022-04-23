@@ -49,6 +49,12 @@ class SortedPriceAndName1 implements Comparator<Computer7>{
 }
 
 public class SortedSetExample{
+	
+//	child of interface of set 
+//	1. if we want to represent a group of individual objects according to some sorting order without duplicates then use sorted set.
+//	2. It is interface we can’t create object of it.
+//	adv : you will able to tell first and last objects
+
 
 	public static void main(String[] args) {
 	
