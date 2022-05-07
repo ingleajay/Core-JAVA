@@ -40,13 +40,13 @@ class Computer12{
 	}
 }
 
-class SortedPriceAndName4 implements Comparator<Computer12>{
+class SortedPrice implements Comparator<Computer12>{
 
 	@Override
 	public int compare(Computer12 o1, Computer12 o2) {
 		int PriceCompare =o1.getCprice()-o2.getCprice();
-	    int BrandCompare =  o1.getCbrand().compareTo(o2.getCbrand());
-	    return (PriceCompare == 0) ? PriceCompare: BrandCompare;  
+	    
+	    return PriceCompare;  
 	}
 	
 }
@@ -71,7 +71,7 @@ public class PriorityQueueExample {
 		PriorityQueue templequeue = new PriorityQueue();
 		templequeue.offer(3);
 		templequeue.offer(7);
-		templequeue.offer(9);
+		templequeue.offer(8);
 		templequeue.offer(1);
 
 		System.out.println("Elements : " + templequeue);
@@ -89,8 +89,8 @@ public class PriorityQueueExample {
 		
 		System.out.println("Remove obj from queue : " + templequeue.remove());
 		
-		PriorityQueue<Computer12> c = new PriorityQueue<Computer12>(new SortedPriceAndName4());
-		Computer12 hp =  new Computer12(1,"Hp", 30000);
+		PriorityQueue<Computer12> c = new PriorityQueue<Computer12>(new SortedPrice());
+		Computer12 hp =  new Computer12(1,"Hp", 90000);
         Computer12 dell =  new Computer12(2,"Dell", 40000);
         Computer12 acer =  new Computer12(3,"zcer",100000);
         

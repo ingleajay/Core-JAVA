@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumingThat {
+	
+	// write in VM arg -> right click - run config - vm arg = 
+	// - en 
+	// -DENV=DEV
 
 	@Test
 	public void assumingThatWithBooleanCondition() {
