@@ -1,0 +1,5 @@
+package com.sboot.models;
+
+public class Student {
+
+}

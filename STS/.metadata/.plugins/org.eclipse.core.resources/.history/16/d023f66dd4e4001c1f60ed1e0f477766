@@ -1,0 +1,17 @@
+package com.sboot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+
+	 @RequestMapping("/signin")
+     public String signin(Model m) {
+		 m.addAttribute("title", "Login");
+	   	 return "signin";
+     }
+	 
+	 
+}

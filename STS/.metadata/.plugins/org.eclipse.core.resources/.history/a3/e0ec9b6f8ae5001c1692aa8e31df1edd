@@ -1,0 +1,86 @@
+package com.sboot.models;
+
+public class Student {
+
+	private int sid;
+	
+	private String sname;
+	
+	private String email;
+	
+	private String pass;
+	
+	private String imgurl;
+	
+	private String role;
+
+	public int getSid() {
+		return sid;
+	}
+
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+
+	public String getSname() {
+		return sname;
+	}
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+	public String getImgurl() {
+		return imgurl;
+	}
+
+	public void setImgurl(String imgurl) {
+		this.imgurl = imgurl;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public Student(int sid, String sname, String email, String pass, String imgurl, String role) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.email = email;
+		this.pass = pass;
+		this.imgurl = imgurl;
+		this.role = role;
+	}
+
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", email=" + email + ", pass=" + pass + ", imgurl=" + imgurl
+				+ ", role=" + role + "]";
+	}
+
+}

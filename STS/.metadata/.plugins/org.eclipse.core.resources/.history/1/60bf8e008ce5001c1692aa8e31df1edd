@@ -1,0 +1,26 @@
+package com.sboot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.sboot.models.Student;
+
+@Controller
+public class HomeController {
+
+	 @RequestMapping("/signin")
+     public String signin(Model m) {
+		 m.addAttribute("title", "Login");
+	   	 return "signin";
+     }
+	 
+	 @RequestMapping("/register")
+	 public String signup(Model m) {
+		 m.addAttribute("title", "Register");
+		 m.addAttribute("student", new Student());
+	   	 return "register";
+	 }
+	 
+	 
+}

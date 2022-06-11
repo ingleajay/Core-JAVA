@@ -1,0 +1,8 @@
+package com.sboot.models;
+
+public class User {
+
+	String uname;
+	String upass;
+	String uemail;
+}
