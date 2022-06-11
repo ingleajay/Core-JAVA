@@ -13,7 +13,7 @@ public class KthMinAndMax {
 		// Find Min and Max from array : 
 		int arr[] = {10,4,3,3,11,8};
 		int size = arr.length-1;
-		int k = 5;
+		int k = 2;
 				
 		// Approach 1: // only kth small element
 		approach1(arr,size,k);
