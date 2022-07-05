@@ -26,6 +26,5 @@ public class App
         session.save(c);
         tx.commit();
         
-        
     }
 }

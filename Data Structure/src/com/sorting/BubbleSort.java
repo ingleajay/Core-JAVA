@@ -9,7 +9,6 @@ public class BubbleSort {
 		int a[] = {1,2,3,4,5};
 		sort(a);
 		modifiedBubbleSort(a);
-
 	}
 
 	private static void modifiedBubbleSort(int[] a) {
